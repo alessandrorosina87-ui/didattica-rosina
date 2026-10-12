@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incontro 2: Google AI Studio e Generazione Multimodale di Immagini | Snodi Formativi</title>
+  <meta name="description" content="Seconda giornata del corso Snodi Formativi: Google AI Studio per testo e immagini, pipeline multimodale da bianco e nero a colori e ai soli contorni lineari.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
+</head>
+<body>
+  <div class="bg-ambient-glow"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Torna alla Home">
+        <div class="brand-icon">✦</div>
+        <div class="brand-text">
+          <span class="brand-title">Snodi Formativi AI</span>
+          <span class="brand-subtitle">Incontro 2 • Google AI Studio & Vision</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html"><span>🏠</span> Home</a></li>
+        <li class="nav-item"><a href="giornata-1.html"><span>1️⃣</span> Giorno 1</a></li>
+        <li class="nav-item"><a href="giornata-2.html" class="active"><span>2️⃣</span> Giorno 2</a></li>
+        <li class="nav-item"><a href="giornata-3.html"><span>3️⃣</span> Giorno 3</a></li>
+        <li class="nav-item"><a href="giornata-4.html"><span>4️⃣</span> Giorno 4</a></li>
+        <li class="nav-item"><a href="giornata-5.html"><span>5️⃣</span> Giorno 5</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambia tema">☀️</button>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Apri menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Percorso di navigazione">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#curriculumSection">Snodi Formativi</a>
+        <span class="sep">/</span>
+        <span style="color: var(--accent-secondary);">Incontro 2: Google AI Studio & Generazione Multimodale</span>
+      </nav>
+
+      <!-- Intestazione Pagina -->
+      <header class="section-header" style="text-align: left; max-width: 900px; margin-bottom: 2.5rem;">
+        <div class="highlight-badge"><span>2️⃣</span> Secondo Incontro Formativo</div>
+        <h1>Google AI Studio & la Pipeline Multimodale: <span class="text-gradient">Dal B/N al Colore ai Contorni</span></h1>
+        <p style="font-size: 1.18rem; color: #cbd5e1;">
+          Esplorazione dell'ambiente professionale Google AI Studio per l'orchestrazione di modelli linguistici e modelli di diffusione visiva (Imagen). L'esperimento pratico di metamorfosi grafica in tre stadi controllati.
+        </p>
+      </header>
+
+      <!-- SEZIONE 1: INTRODUZIONE A GOOGLE AI STUDIO -->
+      <section class="card" style="margin-bottom: 3rem;">
+        <div class="highlight-badge" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">
+          <span>🎛️</span> L'Ambiente di Lavoro
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">Cos'è Google AI Studio e Perché è Fondamentale per i Docenti</h2>
+        <p>
+          Mentre le interfacce chat convenzionali nascondono la complessità tecnica sotto una barra di testo, <strong>Google AI Studio</strong> è la piattaforma ufficiale che consente a educatori e sviluppatori di interagire con i modelli Gemini e Imagen manipolando le leve fondamentali del modello.
+        </p>
+
+        <div class="cards-grid-3" style="margin-top: 1.8rem;">
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.6rem; color: var(--accent-secondary); margin-bottom: 0.5rem;">⚙️ System Instructions</div>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              Le istruzioni di sistema permettono di definire l'identità immutabile dell'IA (es. "Sei un esaminatore severo che valuta l'ortografia") prima che l'utente scriva anche una sola riga.
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.6rem; color: var(--accent-amber); margin-bottom: 0.5rem;">🌡️ Temperatura & Top-P</div>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              La temperatura (0.0 - 2.0) controlla la casualità della campionatura: a 0.0 il modello è deterministico e analitico; a 1.2 diventa creativo e divergente per compiti artistici.
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.6rem; color: #34d399; margin-bottom: 0.5rem;">👁️ Visione & Multimodalità</div>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              Capacità di combinare in un unico flusso di inferenza prompt testuali e immagini ad alta risoluzione per generare descrizioni, modifiche stilistiche ed estrazioni vettoriali.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE 2: L'ESPERIMENTO IN CLASSE: B/N -> COLORE -> CONTORNI -->
+      <section class="card" style="margin-bottom: 3rem; background: linear-gradient(145deg, rgba(16, 22, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%);">
+        <div class="highlight-badge" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8;">
+          <span>🧪</span> Il Caso di Studio Pratico
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">L'Esperimento Visivo in Tre Fasi: La Civetta Meccanica della Conoscenza</h2>
+        <p>
+          Nel nostro laboratorio con i docenti abbiamo messo alla prova i modelli di generazione delle immagini attraverso un processo rigoroso e sequenziale, dimostrando come l'IA possa essere indirizzata passo dopo passo:
+        </p>
+
+        <!-- VISUALIZZATORE INTERATTIVO A 3 STADI -->
+        <div class="multimodal-viewer" id="multimodalViewer">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem;">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <button class="btn btn-secondary btn-sm stage-select-btn active" data-stage="bw" id="btnStageBw">
+                <span>1.</span> Bianco e Nero
+              </button>
+              <button class="btn btn-secondary btn-sm stage-select-btn" data-stage="color" id="btnStageColor">
+                <span>2.</span> Immagine a Colori
+              </button>
+              <button class="btn btn-secondary btn-sm stage-select-btn" data-stage="contour" id="btnStageContour">
+                <span>3.</span> Soli Contorni Visibili
+              </button>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-secondary);">
+              Modello: Google Imagen 3 via AI Studio
+            </span>
+          </div>
+
+          <div class="cards-grid-2" style="align-items: center; gap: 2.5rem;">
+            <!-- Riquadro Immagine Grande -->
+            <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--border-glow); box-shadow: var(--shadow-glow); background: #000; aspect-ratio: 1/1;">
+              <img id="day2MainPreview" src="assets/img/owl-bw.jpg" alt="Civetta meccanica in bianco e nero" style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.25s ease;">
+            </div>
+
+            <!-- Descrizione Didattica della Fase Attiva -->
+            <div>
+              <div id="day2StageDescription" style="background: rgba(2, 6, 23, 0.6); border: 1px solid var(--border-subtle); padding: 1.8rem; border-radius: var(--radius-md);">
+                <strong style="color: #38bdf8; font-size: 1.15rem; display: block; margin-bottom: 0.6rem;">
+                  Fase 1: Analisi Grayscale & Tonalità Monocromatica
+                </strong>
+                <p style="font-size: 0.96rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 0;">
+                  Partenza da un'immagine fotografica o incisione in bianco e nero. Il modello multimodale scompone l'input nei canali di luminosità e mappa i volumi geometrici senza informazioni cromatiche.
+                </p>
+              </div>
+
+              <!-- Sintesi pedagogica delle tre fasi -->
+              <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                <div style="display: flex; gap: 0.8rem; align-items: center; font-size: 0.9rem; color: #cbd5e1;">
+                  <span style="color: #818cf8; font-weight: bold;">[Step 1]</span>
+                  <span><strong>Monocromia iniziale:</strong> Comprensione di luci, ombre e struttura formale.</span>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: center; font-size: 0.9rem; color: #cbd5e1;">
+                  <span style="color: #34d399; font-weight: bold;">[Step 2]</span>
+                  <span><strong>Colorazione vivida:</strong> Applicazione di palette smeraldo e ottone con illuminazione cinica.</span>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: center; font-size: 0.9rem; color: #cbd5e1;">
+                  <span style="color: #f59e0b; font-weight: bold;">[Step 3]</span>
+                  <span><strong>Line art pura:</strong> Estrazione dei soli contorni lineari per schede operative da stampare.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALLERIA A TRE SCHEDE SINOTTICHE -->
+        <div class="viewer-stages">
+          <div class="stage-card">
+            <div class="stage-img-wrap">
+              <img src="assets/img/owl-bw.jpg" alt="Fase 1 Bianco e Nero" loading="lazy">
+            </div>
+            <div class="stage-info">
+              <span class="stage-badge" style="background: rgba(148, 163, 184, 0.2); color: #cbd5e1;">FASE 1</span>
+              <h4>Bianco e Nero</h4>
+              <p>Studio chiaroscurale e tessitura meccanica monocromatica.</p>
+            </div>
+          </div>
+
+          <div class="stage-card">
+            <div class="stage-img-wrap">
+              <img src="assets/img/owl-color.jpg" alt="Fase 2 A Colori" loading="lazy">
+            </div>
+            <div class="stage-info">
+              <span class="stage-badge" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7;">FASE 2</span>
+              <h4>Colorazione Iridiscente</h4>
+              <p>Reinterpretazione cromatica smeraldo, oro e ciano neon.</p>
+            </div>
+          </div>
+
+          <div class="stage-card">
+            <div class="stage-img-wrap">
+              <img src="assets/img/owl-contour.jpg" alt="Fase 3 Soli Contorni" loading="lazy">
+            </div>
+            <div class="stage-info">
+              <span class="stage-badge" style="background: rgba(245, 158, 11, 0.2); color: #fcd34d;">FASE 3</span>
+              <h4>Soli Contorni Visibili</h4>
+              <p>Isolamento vettoriale line art per attività laboratoriali.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE 3: I PROMPT ESATTI UTILIZZATI IN AI STUDIO -->
+      <section class="card" style="margin-bottom: 3rem;">
+        <div class="highlight-badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+          <span>📝</span> Prompt Repertory
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">I Prompt Utilizzati nel Laboratorio di Immagini</h2>
+        <p>
+          Ecco le sequenze di prompt testate dai docenti in Google AI Studio per ottenere i tre risultati sopra illustrati:
+        </p>
+
+        <!-- Prompt 1: Dalla scala di grigi al colore -->
+        <div class="prompt-box">
+          <div class="prompt-box-header">
+            <span class="prompt-box-title">Prompt 1: Generazione della Versione a Colori con Imagen 3</span>
+            <button class="btn-copy" data-target="promptDay2Color" aria-label="Copia prompt colori">Copia Prompt</button>
+          </div>
+          <div class="prompt-text" id="promptDay2Color">
+A majestic mechanical steampunk and cybernetic owl perched on an antique book, illuminated with vibrant iridescent emerald green, golden brass, electric cyan feathers, luminous glowing amber eyes, hyper-detailed digital art, high quality studio lighting, dark clean background.
+          </div>
+        </div>
+
+        <!-- Prompt 2: Estrazione dei contorni -->
+        <div class="prompt-box">
+          <div class="prompt-box-header">
+            <span class="prompt-box-title">Prompt 2: Trasformazione in Soli Contorni Lineari (Line Art & Outline)</span>
+            <button class="btn-copy" data-target="promptDay2Contour" aria-label="Copia prompt contorni">Copia Prompt</button>
+          </div>
+          <div class="prompt-text" id="promptDay2Contour">
+Convert into clean minimalist line art contour drawing only. Pure black outlines on clean white background, coloring book style, technical line contour drawing of the mechanical steampunk cybernetic owl on the book, no shading, no colors, only crisp contours and outlines.
+          </div>
+        </div>
+      </section>
+
+      <!-- CALLOUT DIDATTICO -->
+      <div class="callout callout-tech">
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">
+          <h4>Applicazione Didattica a Scuola</h4>
+          <p>
+            La capacità di generare versioni a <strong>soli contorni lineari</strong> permette agli insegnanti di creare istantaneamente schede di disegno per la scuola primaria, tavole anatomiche da completare per le scienze, mappe geografiche mute personalizzate e schemi di montaggio per i laboratori di tecnologia, abbattendo i tempi di preparazione dei materiali inclusivi (BES e DSA).
+          </p>
+        </div>
+      </div>
+
+      <!-- PAGER NAVIGAZIONE TRA GIORNATE -->
+      <nav class="day-pager-nav" aria-label="Navigazione tra le giornate">
+        <a href="giornata-1.html" class="btn btn-secondary">← Giorno 1: Teoria & Prompt</a>
+        <a href="giornata-3.html" class="btn btn-primary">Giorno 3: AI Act, GDPR & Web SPA →</a>
+      </nav>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>Snodi Formativi AI • Incontro 2: Google AI Studio & Visione Multimodale</div>
+      <div><a href="index.html">Torna alla panoramica</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

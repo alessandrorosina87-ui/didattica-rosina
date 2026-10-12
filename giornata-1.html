@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incontro 1: Teoria dell'IA, Ingegneria dei Prompt e Gemini Canvas | Snodi Formativi</title>
+  <meta name="description" content="Prima giornata del corso Snodi Formativi: fondamenti teorici dei Large Language Models, confronto prompt ChatGPT, ottimizzazione su Gemini e creazione slide con Gemini Canvas.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+</head>
+<body>
+  <div class="bg-ambient-glow"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Torna alla Home">
+        <div class="brand-icon">✦</div>
+        <div class="brand-text">
+          <span class="brand-title">Snodi Formativi AI</span>
+          <span class="brand-subtitle">Incontro 1 • Teoria & Canvas</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html"><span>🏠</span> Home</a></li>
+        <li class="nav-item"><a href="giornata-1.html" class="active"><span>1️⃣</span> Giorno 1</a></li>
+        <li class="nav-item"><a href="giornata-2.html"><span>2️⃣</span> Giorno 2</a></li>
+        <li class="nav-item"><a href="giornata-3.html"><span>3️⃣</span> Giorno 3</a></li>
+        <li class="nav-item"><a href="giornata-4.html"><span>4️⃣</span> Giorno 4</a></li>
+        <li class="nav-item"><a href="giornata-5.html"><span>5️⃣</span> Giorno 5</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambia tema">☀️</button>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Apri menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Percorso di navigazione">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#curriculumSection">Snodi Formativi</a>
+        <span class="sep">/</span>
+        <span style="color: var(--accent-secondary);">Incontro 1: Teoria dell'IA, Prompt & Gemini Canvas</span>
+      </nav>
+
+      <!-- Intestazione Pagina -->
+      <header class="section-header" style="text-align: left; max-width: 900px; margin-bottom: 2.5rem;">
+        <div class="highlight-badge"><span>1️⃣</span> Primo Incontro Formativo</div>
+        <h1>Fondamenti Teorici dell'IA, Ingegneria dei Prompt e <span class="text-gradient">Google Gemini Canvas</span></h1>
+        <p style="font-size: 1.18rem; color: #cbd5e1;">
+          Dalla demistificazione dei modelli linguistici probabilistici alla costruzione di prompt didattici ad alta precisione. Come siamo passati da ChatGPT a Google Gemini per generare e rifinire diapositive interattive con lo spazio di lavoro Canvas.
+        </p>
+      </header>
+
+      <!-- SEZIONE 1: LA TEORIA DIETRO I MODELLI LINGUISTICI -->
+      <section class="card" style="margin-bottom: 3rem;">
+        <div class="highlight-badge" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">
+          <span>🧠</span> I Temi Teorici della Prima Giornata
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">Come Funziona Davvero un LLM: Smontare il Pregiudizio Magico</h2>
+        <p>
+          Il primo passo educativo imprescindibile è stato spiegare ai docenti che un Large Language Model (come GPT-4 o Google Gemini) <strong>non pensa, non prova emozioni e non possiede una coscienza</strong>. È un modello matematico predittivo fondato sull'architettura <em>Transformer</em> e sul meccanismo di auto-attenzione (Self-Attention).
+        </p>
+
+        <div class="cards-grid-3" style="margin-top: 1.8rem;">
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">📊</div>
+            <h4 style="margin-bottom: 0.4rem; color: #38bdf8;">Previsione di Token</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0;">
+              L'IA calcola la probabilità condizionata del token successivo: dato un testo precedente, quale parola o pezzo di parola ha la più alta probabilità statistica di seguire?
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🌀</div>
+            <h4 style="margin-bottom: 0.4rem; color: #fbbf24;">Origine delle Allucinazioni</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0;">
+              L'allucinazione non è un "bug", ma una caratteristica della natura probabilistica: il modello privilegia la coerenza sintattica rispetto alla verità fattuale, a meno che non sia vincolato rigidamente.
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🧭</div>
+            <h4 style="margin-bottom: 0.4rem; color: #34d399;">Il Ruolo del Pensiero Critico</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0;">
+              Sapendo che il modello formula plausibilità statistica e non verità assoluta, docente e studente assumono la veste fondamentale di verificatori (fact-checkers) ed editori consapevoli.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE 2: DAI PROMPT SEMPLICI AI PROMPT EFFICACI -->
+      <section class="card" style="margin-bottom: 3rem;">
+        <div class="highlight-badge" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8;">
+          <span>⚙️</span> Ingegneria del Prompt
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">L'Evoluzione del Prompt: Dal Desiderio alla Specifica Formale</h2>
+        <p>
+          Durante l'incontro abbiamo sperimentato direttamente la differenza qualitativa tra un prompt generico ("semplice") formulato su ChatGPT e un prompt strutturato ("efficace") basato sulla formula <strong>R.C.O.V.F.</strong> (Ruolo, Contesto, Obiettivo, Vincoli, Formato).
+        </p>
+
+        <!-- Esempio 1: Il Prompt Semplice vs Efficace -->
+        <div class="comparison-grid" style="margin-top: 2rem;">
+          <div class="comparison-box passive">
+            <span class="box-tag passive">Prompt Semplice ( ChatGPT )</span>
+            <div class="prompt-snippet" id="snippetSimplePrompt">
+"Fammi delle slide su Alessandro Magno per la scuola media."
+            </div>
+            <p style="font-size: 0.88rem; color: #cbd5e1;">
+              <strong>Risultato ottenuto:</strong> Testo generico, elenchi puntati noiosi e ripetitivi, linguaggio non calibrato sull'età degli studenti, assenza di elementi di discussione o attivazione critica.
+            </p>
+          </div>
+
+          <div class="comparison-box critical">
+            <span class="box-tag critical">Prompt Efficace Strutturato ( ChatGPT ➔ Gemini )</span>
+            <div class="prompt-box-header" style="margin-bottom: 0.4rem;">
+              <span class="prompt-box-title">Modello ad Alta Efficacia</span>
+              <button class="btn-copy" data-target="snippetEffectivePrompt" aria-label="Copia prompt efficace">Copia Prompt</button>
+            </div>
+            <div class="prompt-snippet" id="snippetEffectivePrompt">
+Agisci come un docente esperto di storia antica e divulgatore didattico.
+CONTESTO: Classe 1ª della Scuola Secondaria di I Grado.
+OBIETTIVO: Creare una presentazione coinvolgente su 'Alessandro Magno: conquistatore o costruttore di ponti culturali?'.
+VINCOLI:
+- Non elencare solo date di battaglie.
+- Ogni slide deve contenere: 1 Titolo accattivante, 3 Punti focali sintetici, 1 Domanda-stimolo per il dibattito in classe.
+- Inserisci un elemento di pensiero critico sul concetto di 'melting pot' ellenistico.
+FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini Canvas.
+            </div>
+            <p style="font-size: 0.88rem; color: #a7f3d0;">
+              <strong>Risultato ottenuto:</strong> Contenuto pedagogico profondo, stimolante per gli allievi, strutturato con gerarchia chiara e pronto per essere riversato in diapositive.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE 3: COPIA SU GEMINI E UTILIZZO DI GEMINI CANVAS -->
+      <section class="card" style="margin-bottom: 3rem; background: linear-gradient(145deg, rgba(16, 22, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%); border-color: rgba(99, 102, 241, 0.35);">
+        <div class="highlight-badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;">
+          <span>🎨</span> Il Flusso Operativo del Laboratorio
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">Da ChatGPT a Google Gemini: La Generazione di Diapositive con Canvas</h2>
+        <p>
+          Uno dei momenti più apprezzati dell'incontro è stato il passaggio operativo tra i due ambienti:
+        </p>
+
+        <div class="cards-grid-3" style="margin: 2rem 0;">
+          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #10b981;">
+            <strong style="color: #6ee7b7; display: block; margin-bottom: 0.5rem;">Fase 1: Ideazione su ChatGPT</strong>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              Abbiamo interrogato ChatGPT per affinare i nodi concettuali dell'argomento e validare la sequenza logica degli argomenti didattici.
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #38bdf8;">
+            <strong style="color: #38bdf8; display: block; margin-bottom: 0.5rem;">Fase 2: Copia & Trasferimento su Gemini</strong>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              Il prompt ottimizzato è stato copiato su Google Gemini, sfruttando la sua integrazione con l'ecosistema Google Workspace e le capacità di sintesi multimodale.
+            </p>
+          </div>
+
+          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #f59e0b;">
+            <strong style="color: #fbbf24; display: block; margin-bottom: 0.5rem;">Fase 3: Editing Interattivo in Canvas</strong>
+            <p style="font-size: 0.92rem; color: #cbd5e1;">
+              Con la modalità <em>Gemini Canvas</em>, il testo delle slide si apre in una finestra laterale dedicata: il docente può selezionare una singola porzione, chiedere di accorciare, riscrivere o cambiare tono senza ricominciare da capo.
+            </p>
+          </div>
+        </div>
+
+        <!-- SIMULATORE ANTEPRIMA GEMINI CANVAS -->
+        <div style="background: #020617; border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.8rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.7rem;">
+              <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #10b981;"></span>
+              <strong style="font-family: var(--font-heading); color: #fff; font-size: 1.05rem;">Simulatore Google Gemini Canvas • Risultato Slide Generate</strong>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-secondary);">MODALITÀ CANVAS ATTIVA</span>
+          </div>
+
+          <div class="cards-grid-2" style="gap: 1.5rem;">
+            <!-- Slide 1 -->
+            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.06); padding: 1.5rem; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 700; text-transform: uppercase;">Diapositiva 1 • Introduzione Critica</span>
+              <h4 style="color: #fff; margin: 0.6rem 0 0.8rem 0;">Oltre il Mito: Chi era davvero Alessandro?</h4>
+              <ul style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; padding-left: 1.2rem;">
+                <li>Dalla Macedonia ai confini dell'India in soli 12 anni.</li>
+                <li>L'allievo di Aristotele: l'amore per i libri e per la gloria.</li>
+                <li><strong>Domanda per la classe:</strong> Si può essere un grande condottiero e al tempo stesso un uomo di cultura?</li>
+              </ul>
+            </div>
+
+            <!-- Slide 2 -->
+            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.06); padding: 1.5rem; border-radius: var(--radius-md);">
+              <span style="font-size: 0.75rem; color: var(--accent-secondary); font-weight: 700; text-transform: uppercase;">Diapositiva 2 • La Rivoluzione Culturale</span>
+              <h4 style="color: #fff; margin: 0.6rem 0 0.8rem 0;">La Fusione dei Popoli e l'Ellenismo</h4>
+              <ul style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; padding-left: 1.2rem;">
+                <li>I matrimoni di Susa: l'integrazione tra greci e persiani.</li>
+                <li>La nascita della <em>koinè diálektos</em> (la lingua comune del Mediterraneo).</li>
+                <li><strong>Domanda per la classe:</strong> Come si relaziona questa fusione con il mondo globale e multiculturale di oggi?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE 4: COSTRUTTORE INTERATTIVO DI PROMPT PER DOCENTI -->
+      <section class="card" style="margin-bottom: 3rem;">
+        <div class="highlight-badge" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+          <span>🛠️</span> Strumento Interattivo per i Partecipanti
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem;">Costruttore Didattico di Prompt Efficace</h2>
+        <p>
+          Usa questo generatore per comporre al volo un prompt strutturato da copiare e testare su ChatGPT o Google Gemini per la tua prossima lezione.
+        </p>
+
+        <div class="cards-grid-2" style="margin-top: 1.8rem;">
+          <div>
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderRole">1. Ruolo del Modello (Persona):</label>
+            <select id="builderRole" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+              <option value="Docente appassionato di materie scientifiche e divulgatore">Docente di Scienze / Divulgatore</option>
+              <option value="Storico contemporaneo e formatore didattico">Storico / Formatoredidattico</option>
+              <option value="Docente di Lettere esperto in debate e pensiero critico">Docente di Lettere & Debate</option>
+              <option value="Ingegnere informatico e mentore di coding etico">Ingegnere Informatico & Coding</option>
+            </select>
+
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderTopic">2. Tema o Argomento della Lezione:</label>
+            <input type="text" id="builderTopic" value="L'Intelligenza Artificiale e l'etica degli algoritmi" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderLevel">3. Ordine di Scuola & Destinatari:</label>
+            <select id="builderLevel" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+              <option value="Scuola Secondaria di II Grado (Liceo / Tecnico)">Scuola Secondaria di II Grado</option>
+              <option value="Scuola Secondaria di I Grado (Medie)">Scuola Secondaria di I Grado</option>
+              <option value="Scuola Primaria (classi IV e V)">Scuola Primaria</option>
+              <option value="Corso di formazione docenti">Formazione Docenti</option>
+            </select>
+
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderFormat">4. Formato di Restituzione:</label>
+            <select id="builderFormat" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff;">
+              <option value="Slide scaletta per Google Gemini Canvas">Slide per Google Gemini Canvas</option>
+              <option value="Mappa concettuale testuale con domande socratiche">Mappa concettuale + Domande socratiche</option>
+              <option value="Griglia per dibattito (Debate a squadre) con fonti">Griglia di Debate con fonti</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="prompt-box" style="margin: 0; height: 100%; display: flex; flex-direction: column;">
+              <div class="prompt-box-header">
+                <span class="prompt-box-title">Prompt Generato in Tempo Reale</span>
+                <button class="btn-copy" data-target="builderOutput" aria-label="Copia prompt generato">Copia negli Appunti</button>
+              </div>
+              <div class="prompt-text" id="builderOutput" style="flex-grow: 1;">
+                Caricamento prompt...
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGER NAVIGAZIONE TRA GIORNATE -->
+      <nav class="day-pager-nav" aria-label="Navigazione tra le giornate">
+        <a href="index.html" class="btn btn-secondary">← Torna alla Home</a>
+        <a href="giornata-2.html" class="btn btn-primary">Giorno 2: AI Studio & Immagini →</a>
+      </nav>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>Snodi Formativi AI • Incontro 1: Teoria, Prompting & Gemini Canvas</div>
+      <div><a href="index.html">Torna alla panoramica</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
