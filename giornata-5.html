@@ -51,10 +51,11 @@
       </nav>
 
       <!-- Intestazione Pagina -->
+
       <header class="section-header" style="text-align: left; max-width: 900px; margin-bottom: 2.5rem;">
         <div class="highlight-badge"><span>5️⃣</span> Quinto Incontro Conclusivo</div>
         <h1>Laboratorio Didattico Integrato su Tema & Sound Design con <span class="text-gradient">Google Flow Music</span></h1>
-        <p style="font-size: 1.18rem; color: #cbd5e1;">
+        <p style="font-size: 1.18rem; color: var(--text-subtle);">
           L'apice operativo del percorso: partire da un tema reale per generare l'intero ecosistema di apprendimento. Risorse di studio per il docente, presentazioni e sfide di realtà per gli studenti, fino alla generazione di audio e colonne sonore educative.
         </p>
       </header>
@@ -71,15 +72,15 @@
 
         <div class="cards-grid-2" style="margin-top: 2rem; gap: 2rem;">
           <!-- Filone 1: Per il Docente -->
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 2rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent-primary);">
+          <div class="nested-card" style="padding: 2rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent-primary);">
             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
               <span style="font-size: 1.8rem;">👨‍🏫</span>
-              <h3 style="color: #fff; font-size: 1.35rem; margin: 0;">Materiali per il Docente (Studio & Regia)</h3>
+              <h3 style="font-size: 1.35rem; margin: 0;">Materiali per il Docente (Studio & Regia)</h3>
             </div>
-            <p style="font-size: 0.95rem; color: #cbd5e1;">
+            <p style="font-size: 0.95rem; color: var(--text-subtle);">
               Strumenti di supporto per approfondire la materia, prevenire gli errori concettuali e orchestrare la classe:
             </p>
-            <ul style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
+            <ul style="color: var(--text-subtle); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
               <li><strong>Quadro epistemologico:</strong> Sintesi delle ultime ricerche con evidenza delle fonti scientifiche accreditate.</li>
               <li><strong>Mappa delle 'Misconcezioni':</strong> Elenco dettagliato dei falsi miti comuni che gli studenti portano in aula.</li>
               <li><strong>Rubrica di valutazione a 4 livelli:</strong> Indicatori chiari per valutare capacità argomentativa, ricerca autonoma e uso critico dell'IA.</li>
@@ -88,15 +89,15 @@
           </div>
 
           <!-- Filone 2: Per la Classe -->
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 2rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent-secondary);">
+          <div class="nested-card" style="padding: 2rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent-secondary);">
             <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
               <span style="font-size: 1.8rem;">🎒</span>
-              <h3 style="color: #fff; font-size: 1.35rem; margin: 0;">Materiali per la Classe (Studio & Presentazione)</h3>
+              <h3 style="font-size: 1.35rem; margin: 0;">Materiali per la Classe (Studio & Presentazione)</h3>
             </div>
-            <p style="font-size: 0.95rem; color: #cbd5e1;">
+            <p style="font-size: 0.95rem; color: var(--text-subtle);">
               Contenuti pensati per attivare gli studenti come protagonisti, ricercatori e relatori:
             </p>
-            <ul style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
+            <ul style="color: var(--text-subtle); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
               <li><strong>Scaletta per Presentazione a Squadre:</strong> Guida per creare slide accattivanti con ruoli distribuiti tra pari.</li>
               <li><strong>Compito di Realtà (Authentic Task):</strong> Simulazione di un consiglio comunale o di un'assemblea ONU sul tema.</li>
               <li><strong>Schede di Fact-Checking:</strong> Attività in cui gli allievi devono verificare 3 affermazioni sospette generate dall'IA.</li>
@@ -107,7 +108,7 @@
       </section>
 
       <!-- SEZIONE 2: GOOGLE FLOW MUSIC & AUDIO GENERATIVO -->
-      <section class="card" style="margin-bottom: 3rem; background: linear-gradient(145deg, rgba(16, 22, 42, 0.95) 0%, rgba(24, 18, 48, 0.8) 100%); border-color: rgba(168, 85, 247, 0.4);">
+      <section class="card card-featured" style="margin-bottom: 3rem;">
         <div class="highlight-badge" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe;">
           <span>🎧</span> Sound Design Pedagogico
         </div>
@@ -118,22 +119,22 @@
 
         <!-- WIDGET PLAYER AUDIO GENERATIVO FUNZIONANTE IN BROWSER -->
         <div class="music-player-widget" style="margin: 2.2rem 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem;">
             <div>
               <span class="stage-badge" style="background: rgba(168, 85, 247, 0.3); color: #e9d5ff;">ESPERIENZA AUDIO LIVE</span>
-              <h3 style="color: #fff; margin: 0.4rem 0 0 0; font-size: 1.35rem;">Sintetizzatore Ambientale per la Classe (Web Audio API)</h3>
+              <h3 style="margin: 0.4rem 0 0 0; font-size: 1.35rem;">Sintetizzatore Ambientale per la Classe (Web Audio API)</h3>
             </div>
             <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #a855f7;">MODELLO: FLOW MUSIC ENGINE</span>
           </div>
 
-          <p style="font-size: 0.95rem; color: #cbd5e1; margin-top: 1rem;">
+          <p style="font-size: 0.95rem; color: var(--text-subtle); margin-top: 1rem;">
             Premi Play per ascoltare una sequenza armonica generata in tempo reale nel browser ispirata al flusso musicale di Google Flow Music (frequenze rilassanti su scala pentatonica per la concentrazione in classe):
           </p>
 
           <div class="player-controls">
             <button class="play-toggle-btn" id="flowMusicPlayBtn" aria-label="Riproduci sintetizzatore audio didattico">▶</button>
             <div style="flex-grow: 1;">
-              <strong id="musicStatusLabel" style="display: block; color: #f1f5f9; font-size: 0.95rem; margin-bottom: 0.4rem;">
+              <strong id="musicStatusLabel" style="display: block; font-size: 0.95rem; margin-bottom: 0.4rem;">
                 Audio in pausa. Clicca play per ascoltare il synth generativo.
               </strong>
               <div class="soundwave-bars" aria-hidden="true">
@@ -158,8 +159,8 @@
 
         <!-- ESEMPI DI PROMPT PER FLOW MUSIC -->
         <div style="margin-top: 2rem;">
-          <h4 style="color: #fff; margin-bottom: 0.8rem;">Prompting Musicale: Come Descrivere il Suono per la Didattica</h4>
-          <p style="font-size: 0.95rem; color: #cbd5e1;">
+          <h4 style="margin-bottom: 0.8rem;">Prompting Musicale: Come Descrivere il Suono per la Didattica</h4>
+          <p style="font-size: 0.95rem; color: var(--text-subtle);">
             I docenti hanno appreso come formulare prompt per Flow Music specificando atmosfera, strumenti, tempo (BPM) e finalità d'uso:
           </p>
 
@@ -198,57 +199,60 @@ Cinematic documentary orchestral intro, hybrid electronic pads with cellos and s
         </p>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1.5rem;">
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #6366f1;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #6366f1;">
             <strong style="color: #a5b4fc;">1. L'IA è un copilota</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Non affidarle il volante del giudizio critico né la valutazione finale degli studenti.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Non affidarle il volante del giudizio critico né la valutazione finale degli studenti.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #06b6d4;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #06b6d4;">
             <strong style="color: #67e8f9;">2. Valuta il processo</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Chiedi la cronologia delle domande poste e l'analisi dei bivi decisionali.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Chiedi la cronologia delle domande poste e l'analisi dei bivi decisionali.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #10b981;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #10b981;">
             <strong style="color: #6ee7b7;">3. Rispetta la privacy</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Nessun dato identificativo dei minori nei prompt di servizi cloud.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Nessun dato identificativo dei minori nei prompt di servizi cloud.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #f59e0b;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #f59e0b;">
             <strong style="color: #fcd34d;">4. Allena il dubbio</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Insegna che l'IA genera plausibilità linguistica, non verità ontologica.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Insegna che l'IA genera plausibilità linguistica, non verità ontologica.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #ec4899;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #ec4899;">
             <strong style="color: #f472b6;">5. Ancorati alle fonti</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Usa strumenti come NotebookLM per ancorare lo studio a testi verificati.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Usa strumenti come NotebookLM per ancorare lo studio a testi verificati.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #8b5cf6;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #8b5cf6;">
             <strong style="color: #c4b5fd;">6. Personalizza con le Gems</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Costruisci tutor socratici guidati da istruzioni educative chiare.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Costruisci tutor socratici guidati da istruzioni educative chiare.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #14b8a6;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #14b8a6;">
             <strong style="color: #5eead4;">7. Coltiva la multimodalità</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Combina testo, immagini vettoriali, video e audio per includere ogni stile.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Combina testo, immagini vettoriali, video e audio per includere ogni stile.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #f97316;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #f97316;">
             <strong style="color: #fdba74;">8. Non vietare, orienta</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">I divieti ciechi creano sotterfugi; l'alfabetizzazione crea cittadini liberi.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">I divieti ciechi creano sotterfugi; l'alfabetizzazione crea cittadini liberi.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #3b82f6;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #3b82f6;">
             <strong style="color: #93c5fd;">9. Favorisci la co-creazione</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Fai lavorare la classe in team su compiti di realtà autentici.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Fai lavorare la classe in team su compiti di realtà autentici.</p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #e11d48;">
+          <div class="nested-card decalogo-item" style="padding: 1.2rem; border-radius: var(--radius-sm); border-left: 3px solid #e11d48;">
             <strong style="color: #fda4af;">10. Umanesimo prima di tutto</strong>
-            <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0.3rem 0 0 0;">Al centro resta sempre la persona umana con la sua sensibilità ed etica.</p>
+            <p style="font-size: 0.88rem; color: var(--text-subtle); margin: 0.3rem 0 0 0;">Al centro resta sempre la persona umana con la sua sensibilità ed etica.</p>
           </div>
         </div>
       </section>
+
+
+
 
       <!-- PAGER NAVIGAZIONE TRA GIORNATE -->
       <nav class="day-pager-nav" aria-label="Navigazione tra le giornate">

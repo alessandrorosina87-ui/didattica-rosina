@@ -54,7 +54,7 @@
       <header class="section-header" style="text-align: left; max-width: 900px; margin-bottom: 2.5rem;">
         <div class="highlight-badge"><span>1️⃣</span> Primo Incontro Formativo</div>
         <h1>Fondamenti Teorici dell'IA, Ingegneria dei Prompt e <span class="text-gradient">Google Gemini Canvas</span></h1>
-        <p style="font-size: 1.18rem; color: #cbd5e1;">
+        <p style="font-size: 1.18rem; color: var(--text-subtle);">
           Dalla demistificazione dei modelli linguistici probabilistici alla costruzione di prompt didattici ad alta precisione. Come siamo passati da ChatGPT a Google Gemini per generare e rifinire diapositive interattive con lo spazio di lavoro Canvas.
         </p>
       </header>
@@ -70,25 +70,25 @@
         </p>
 
         <div class="cards-grid-3" style="margin-top: 1.8rem;">
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card">
             <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">📊</div>
-            <h4 style="margin-bottom: 0.4rem; color: #38bdf8;">Previsione di Token</h4>
+            <h4 style="margin-bottom: 0.4rem; color: var(--accent-secondary);">Previsione di Token</h4>
             <p style="font-size: 0.92rem; margin-bottom: 0;">
               L'IA calcola la probabilità condizionata del token successivo: dato un testo precedente, quale parola o pezzo di parola ha la più alta probabilità statistica di seguire?
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card">
             <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🌀</div>
-            <h4 style="margin-bottom: 0.4rem; color: #fbbf24;">Origine delle Allucinazioni</h4>
+            <h4 style="margin-bottom: 0.4rem; color: var(--accent-amber);">Origine delle Allucinazioni</h4>
             <p style="font-size: 0.92rem; margin-bottom: 0;">
               L'allucinazione non è un "bug", ma una caratteristica della natura probabilistica: il modello privilegia la coerenza sintattica rispetto alla verità fattuale, a meno che non sia vincolato rigidamente.
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.4rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card">
             <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">🧭</div>
-            <h4 style="margin-bottom: 0.4rem; color: #34d399;">Il Ruolo del Pensiero Critico</h4>
+            <h4 style="margin-bottom: 0.4rem; color: var(--accent-emerald);">Il Ruolo del Pensiero Critico</h4>
             <p style="font-size: 0.92rem; margin-bottom: 0;">
               Sapendo che il modello formula plausibilità statistica e non verità assoluta, docente e studente assumono la veste fondamentale di verificatori (fact-checkers) ed editori consapevoli.
             </p>
@@ -113,7 +113,7 @@
             <div class="prompt-snippet" id="snippetSimplePrompt">
 "Fammi delle slide su Alessandro Magno per la scuola media."
             </div>
-            <p style="font-size: 0.88rem; color: #cbd5e1;">
+            <p style="font-size: 0.88rem; color: var(--text-subtle);">
               <strong>Risultato ottenuto:</strong> Testo generico, elenchi puntati noiosi e ripetitivi, linguaggio non calibrato sull'età degli studenti, assenza di elementi di discussione o attivazione critica.
             </p>
           </div>
@@ -134,7 +134,7 @@ VINCOLI:
 - Inserisci un elemento di pensiero critico sul concetto di 'melting pot' ellenistico.
 FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini Canvas.
             </div>
-            <p style="font-size: 0.88rem; color: #a7f3d0;">
+            <p style="font-size: 0.88rem; color: var(--accent-emerald);">
               <strong>Risultato ottenuto:</strong> Contenuto pedagogico profondo, stimolante per gli allievi, strutturato con gerarchia chiara e pronto per essere riversato in diapositive.
             </p>
           </div>
@@ -142,7 +142,7 @@ FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini
       </section>
 
       <!-- SEZIONE 3: COPIA SU GEMINI E UTILIZZO DI GEMINI CANVAS -->
-      <section class="card" style="margin-bottom: 3rem; background: linear-gradient(145deg, rgba(16, 22, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%); border-color: rgba(99, 102, 241, 0.35);">
+      <section class="card card-featured" style="margin-bottom: 3rem;">
         <div class="highlight-badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;">
           <span>🎨</span> Il Flusso Operativo del Laboratorio
         </div>
@@ -152,44 +152,44 @@ FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini
         </p>
 
         <div class="cards-grid-3" style="margin: 2rem 0;">
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #10b981;">
-            <strong style="color: #6ee7b7; display: block; margin-bottom: 0.5rem;">Fase 1: Ideazione su ChatGPT</strong>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+          <div class="nested-card" style="border-top: 3px solid #10b981;">
+            <strong style="color: var(--accent-emerald); display: block; margin-bottom: 0.5rem;">Fase 1: Ideazione su ChatGPT</strong>
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               Abbiamo interrogato ChatGPT per affinare i nodi concettuali dell'argomento e validare la sequenza logica degli argomenti didattici.
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #38bdf8;">
-            <strong style="color: #38bdf8; display: block; margin-bottom: 0.5rem;">Fase 2: Copia & Trasferimento su Gemini</strong>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+          <div class="nested-card" style="border-top: 3px solid #38bdf8;">
+            <strong style="color: var(--accent-secondary); display: block; margin-bottom: 0.5rem;">Fase 2: Copia & Trasferimento su Gemini</strong>
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               Il prompt ottimizzato è stato copiato su Google Gemini, sfruttando la sua integrazione con l'ecosistema Google Workspace e le capacità di sintesi multimodale.
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.5rem; border-radius: var(--radius-md); border-top: 3px solid #f59e0b;">
-            <strong style="color: #fbbf24; display: block; margin-bottom: 0.5rem;">Fase 3: Editing Interattivo in Canvas</strong>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+          <div class="nested-card" style="border-top: 3px solid #f59e0b;">
+            <strong style="color: var(--accent-amber); display: block; margin-bottom: 0.5rem;">Fase 3: Editing Interattivo in Canvas</strong>
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               Con la modalità <em>Gemini Canvas</em>, il testo delle slide si apre in una finestra laterale dedicata: il docente può selezionare una singola porzione, chiedere di accorciare, riscrivere o cambiare tono senza ricominciare da capo.
             </p>
           </div>
         </div>
 
         <!-- SIMULATORE ANTEPRIMA GEMINI CANVAS -->
-        <div style="background: #020617; border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.8rem; margin-bottom: 1.5rem;">
+        <div class="spa-demo-box" style="border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md);">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.8rem; margin-bottom: 1.5rem;">
             <div style="display: flex; align-items: center; gap: 0.7rem;">
               <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #10b981;"></span>
-              <strong style="font-family: var(--font-heading); color: #fff; font-size: 1.05rem;">Simulatore Google Gemini Canvas • Risultato Slide Generate</strong>
+              <strong style="font-family: var(--font-heading); font-size: 1.05rem;">Simulatore Google Gemini Canvas • Risultato Slide Generate</strong>
             </div>
             <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-secondary);">MODALITÀ CANVAS ATTIVA</span>
           </div>
 
           <div class="cards-grid-2" style="gap: 1.5rem;">
             <!-- Slide 1 -->
-            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.06); padding: 1.5rem; border-radius: var(--radius-md);">
+            <div class="nested-card">
               <span style="font-size: 0.75rem; color: var(--accent-amber); font-weight: 700; text-transform: uppercase;">Diapositiva 1 • Introduzione Critica</span>
-              <h4 style="color: #fff; margin: 0.6rem 0 0.8rem 0;">Oltre il Mito: Chi era davvero Alessandro?</h4>
-              <ul style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; padding-left: 1.2rem;">
+              <h4 style="margin: 0.6rem 0 0.8rem 0;">Oltre il Mito: Chi era davvero Alessandro?</h4>
+              <ul style="font-size: 0.88rem; color: var(--text-subtle); line-height: 1.6; padding-left: 1.2rem;">
                 <li>Dalla Macedonia ai confini dell'India in soli 12 anni.</li>
                 <li>L'allievo di Aristotele: l'amore per i libri e per la gloria.</li>
                 <li><strong>Domanda per la classe:</strong> Si può essere un grande condottiero e al tempo stesso un uomo di cultura?</li>
@@ -197,10 +197,10 @@ FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini
             </div>
 
             <!-- Slide 2 -->
-            <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.06); padding: 1.5rem; border-radius: var(--radius-md);">
+            <div class="nested-card">
               <span style="font-size: 0.75rem; color: var(--accent-secondary); font-weight: 700; text-transform: uppercase;">Diapositiva 2 • La Rivoluzione Culturale</span>
-              <h4 style="color: #fff; margin: 0.6rem 0 0.8rem 0;">La Fusione dei Popoli e l'Ellenismo</h4>
-              <ul style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; padding-left: 1.2rem;">
+              <h4 style="margin: 0.6rem 0 0.8rem 0;">La Fusione dei Popoli e l'Ellenismo</h4>
+              <ul style="font-size: 0.88rem; color: var(--text-subtle); line-height: 1.6; padding-left: 1.2rem;">
                 <li>I matrimoni di Susa: l'integrazione tra greci e persiani.</li>
                 <li>La nascita della <em>koinè diálektos</em> (la lingua comune del Mediterraneo).</li>
                 <li><strong>Domanda per la classe:</strong> Come si relaziona questa fusione con il mondo globale e multiculturale di oggi?</li>
@@ -222,27 +222,27 @@ FORMATO: 5 diapositive strutturate con testo formattato pronto per Google Gemini
 
         <div class="cards-grid-2" style="margin-top: 1.8rem;">
           <div>
-            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderRole">1. Ruolo del Modello (Persona):</label>
-            <select id="builderRole" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;" for="builderRole">1. Ruolo del Modello (Persona):</label>
+            <select id="builderRole" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.2rem;">
               <option value="Docente appassionato di materie scientifiche e divulgatore">Docente di Scienze / Divulgatore</option>
               <option value="Storico contemporaneo e formatore didattico">Storico / Formatoredidattico</option>
               <option value="Docente di Lettere esperto in debate e pensiero critico">Docente di Lettere & Debate</option>
               <option value="Ingegnere informatico e mentore di coding etico">Ingegnere Informatico & Coding</option>
             </select>
 
-            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderTopic">2. Tema o Argomento della Lezione:</label>
-            <input type="text" id="builderTopic" value="L'Intelligenza Artificiale e l'etica degli algoritmi" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;" for="builderTopic">2. Tema o Argomento della Lezione:</label>
+            <input type="text" id="builderTopic" value="L'Intelligenza Artificiale e l'etica degli algoritmi" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.2rem;">
 
-            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderLevel">3. Ordine di Scuola & Destinatari:</label>
-            <select id="builderLevel" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff; margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;" for="builderLevel">3. Ordine di Scuola & Destinatari:</label>
+            <select id="builderLevel" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 1.2rem;">
               <option value="Scuola Secondaria di II Grado (Liceo / Tecnico)">Scuola Secondaria di II Grado</option>
               <option value="Scuola Secondaria di I Grado (Medie)">Scuola Secondaria di I Grado</option>
               <option value="Scuola Primaria (classi IV e V)">Scuola Primaria</option>
               <option value="Corso di formazione docenti">Formazione Docenti</option>
             </select>
 
-            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #e2e8f0;" for="builderFormat">4. Formato di Restituzione:</label>
-            <select id="builderFormat" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); background: #020617; border: 1px solid var(--border-subtle); color: #fff;">
+            <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;" for="builderFormat">4. Formato di Restituzione:</label>
+            <select id="builderFormat" style="width: 100%; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
               <option value="Slide scaletta per Google Gemini Canvas">Slide per Google Gemini Canvas</option>
               <option value="Mappa concettuale testuale con domande socratiche">Mappa concettuale + Domande socratiche</option>
               <option value="Griglia per dibattito (Debate a squadre) con fonti">Griglia di Debate con fonti</option>

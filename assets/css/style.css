@@ -30,6 +30,7 @@
   /* Tipografia & Testi */
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
+  --text-subtle: #cbd5e1;
   --text-dim: #64748b;
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -54,17 +55,19 @@
 /* Modalità Chiara (Opzionale e accessibile) */
 body.theme-light {
   --bg-dark: #f8fafc;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-card: #ffffff;
+  --bg-card-hover: #ffffff;
   --bg-glass: rgba(0, 0, 0, 0.03);
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-glow: rgba(99, 102, 241, 0.3);
+  --border-subtle: rgba(0, 0, 0, 0.09);
+  --border-glow: rgba(99, 102, 241, 0.25);
   --text-main: #0f172a;
-  --text-muted: #475569;
+  --text-muted: #334155;
+  --text-subtle: #475569;
   --text-dim: #64748b;
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.15);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.12);
+  --shadow-amber: 0 10px 25px rgba(245, 158, 11, 0.12);
 }
 
 /* ==========================================================================
@@ -425,7 +428,7 @@ a:hover {
 .hero-lead {
   font-size: 1.25rem;
   line-height: 1.7;
-  color: #cbd5e1;
+  color: var(--text-subtle);
   margin-bottom: 2rem;
 }
 
@@ -699,7 +702,7 @@ a:hover {
 
 .day-keypoints li {
   font-size: 0.9rem;
-  color: #cbd5e1;
+  color: var(--text-subtle);
   margin-bottom: 0.5rem;
   display: flex;
   align-items: flex-start;
@@ -1071,6 +1074,34 @@ a:hover {
   border-color: rgba(16, 185, 129, 0.4);
 }
 
+/* Alerts (Mini-SPA e Feedback) */
+.alert-danger {
+  background: rgba(244, 63, 94, 0.15);
+  border: 1px solid rgba(244, 63, 94, 0.5);
+  color: #fecdd3;
+  padding: 1.2rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.alert-danger strong {
+  color: #fda4af;
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #a7f3d0;
+  padding: 1.2rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.alert-success strong {
+  color: #6ee7b7;
+}
+
+
 /* Chat simulator (Giorno 4 & Gem socratica) */
 .chat-simulator {
   background: #020617;
@@ -1348,4 +1379,710 @@ a:hover {
     margin-top: 1rem;
     max-width: 100%;
   }
+}
+
+/* ==========================================================================
+   MODALITÀ CHIARA (THEME LIGHT) - STILI COMPLETI & ACCESSIBILITÀ
+   Risolve ogni problema di contrasto e leggibilità dei testi
+   ========================================================================== */
+
+/* 1. Header e Navigazione */
+body.theme-light .site-header {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .brand-title {
+  color: #0f172a;
+}
+
+body.theme-light .nav-item a {
+  color: #475569;
+}
+
+body.theme-light .nav-item a:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .nav-item a.active {
+  color: #4338ca;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+body.theme-light .theme-toggle-btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #0f172a;
+}
+
+body.theme-light .theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+body.theme-light .mobile-nav-toggle {
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  body.theme-light .nav-links {
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* 2. Sfondi & Griglie */
+body.theme-light .bg-grid-overlay {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+body.theme-light .bg-ambient-glow {
+  opacity: 0.45;
+}
+
+/* 3. Pulsanti Secondari & Badge */
+body.theme-light .btn-secondary {
+  background: #f1f5f9;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1e293b;
+}
+
+body.theme-light .btn-secondary:hover {
+  background: #e2e8f0;
+  border-color: rgba(99, 102, 241, 0.35);
+  color: #0f172a;
+}
+
+body.theme-light .highlight-badge {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.28);
+  color: #4338ca;
+}
+
+body.theme-light .day-number {
+  background: rgba(99, 102, 241, 0.1);
+  color: #4338ca;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+body.theme-light .day-tools {
+  color: #64748b;
+}
+
+/* 4. Hero Section */
+body.theme-light .hero-lead {
+  color: #334155;
+}
+
+body.theme-light .hero-floating-card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .hero-floating-card p {
+  color: #0f172a;
+}
+
+body.theme-light .teacher-meta-pill {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+body.theme-light .teacher-info strong {
+  color: #0f172a;
+}
+
+body.theme-light .teacher-info span {
+  color: #475569;
+}
+
+/* 5. Manifesto Pedagogico */
+body.theme-light .manifesto-box {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+body.theme-light .manifesto-quote {
+  color: #1e293b;
+  border-left-color: #d97706;
+}
+
+body.theme-light .manifesto-icon {
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+  color: #4f46e5;
+}
+
+body.theme-light .manifesto-item h3 {
+  color: #0f172a;
+}
+
+body.theme-light .manifesto-item p {
+  color: #334155;
+}
+
+/* 6. Card & Griglie */
+body.theme-light .card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+body.theme-light .day-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+body.theme-light .day-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.12);
+}
+
+body.theme-light .day-title {
+  color: #0f172a;
+}
+
+body.theme-light .day-description {
+  color: #334155;
+}
+
+body.theme-light .day-keypoints li {
+  color: #334155;
+}
+
+body.theme-light .day-card-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Card con gradienti scuri trasformate in chiare */
+body.theme-light .card-featured,
+body.theme-light .card[style*="background: linear-gradient"],
+body.theme-light .card[style*="background:linear-gradient"] {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .card[style*="background: linear-gradient"] h2,
+body.theme-light .card[style*="background:linear-gradient"] h2,
+body.theme-light .card[style*="background: linear-gradient"] h3,
+body.theme-light .card[style*="background:linear-gradient"] h3,
+body.theme-light .card[style*="background: linear-gradient"] h4,
+body.theme-light .card[style*="background:linear-gradient"] h4 {
+  color: #0f172a !important;
+}
+
+body.theme-light .card[style*="background: linear-gradient"] p,
+body.theme-light .card[style*="background:linear-gradient"] p {
+  color: #334155 !important;
+}
+
+/* Card annidate e riquadri interni */
+body.theme-light .nested-card,
+body.theme-light div[style*="background: rgba(2, 6, 23"],
+body.theme-light div[style*="background:rgba(2, 6, 23"],
+body.theme-light div[style*="background: rgba(30, 41, 59"],
+body.theme-light div[style*="background:rgba(30, 41, 59"] {
+  background: #f8fafc !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+body.theme-light div[style*="background: rgba(2, 6, 23"] p,
+body.theme-light div[style*="background:rgba(2, 6, 23"] p,
+body.theme-light div[style*="background: rgba(2, 6, 23"] ul,
+body.theme-light div[style*="background:rgba(2, 6, 23"] ul,
+body.theme-light div[style*="background: rgba(30, 41, 59"] p,
+body.theme-light div[style*="background:rgba(30, 41, 59"] p,
+body.theme-light div[style*="background: rgba(30, 41, 59"] ul,
+body.theme-light div[style*="background:rgba(30, 41, 59"] ul {
+  color: #334155 !important;
+}
+
+body.theme-light div[style*="background: rgba(2, 6, 23"] h3,
+body.theme-light div[style*="background:rgba(2, 6, 23"] h3,
+body.theme-light div[style*="background: rgba(2, 6, 23"] h4,
+body.theme-light div[style*="background:rgba(2, 6, 23"] h4,
+body.theme-light div[style*="background: rgba(30, 41, 59"] h4,
+body.theme-light div[style*="background:rgba(30, 41, 59"] h4 {
+  color: #0f172a !important;
+}
+
+/* 7. Simulatore di Pensiero Critico (Homepage) */
+body.theme-light .simulator-container {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .sim-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .sim-tab-btn {
+  color: #475569;
+}
+
+body.theme-light .sim-tab-btn:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+body.theme-light .sim-tab-btn.active {
+  color: #4338ca;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+body.theme-light .comparison-box.passive {
+  background: #fff1f2;
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+body.theme-light .comparison-box.passive h4 {
+  color: #9f1239;
+}
+
+body.theme-light .comparison-box.passive h5 {
+  color: #be123c !important;
+}
+
+body.theme-light .comparison-box.passive ul {
+  color: #334155 !important;
+}
+
+body.theme-light .box-tag.passive {
+  background: rgba(244, 63, 94, 0.15);
+  color: #9f1239;
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+body.theme-light .comparison-box.critical {
+  background: #f0fdf4;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+body.theme-light .comparison-box.critical h4 {
+  color: #065f46;
+}
+
+body.theme-light .comparison-box.critical h5 {
+  color: #047857 !important;
+}
+
+body.theme-light .comparison-box.critical ul {
+  color: #334155 !important;
+}
+
+body.theme-light .box-tag.critical {
+  background: rgba(16, 185, 129, 0.15);
+  color: #065f46;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+body.theme-light .prompt-snippet {
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1e293b;
+}
+
+body.theme-light .prompt-snippet strong {
+  color: #0f172a;
+}
+
+/* 8. Callout Didattici */
+body.theme-light .callout-pedagogy {
+  background: #fffbeb;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #78350f;
+}
+body.theme-light .callout-pedagogy .callout-content h4 {
+  color: #92400e;
+}
+body.theme-light .callout-pedagogy p {
+  color: #78350f;
+}
+body.theme-light .callout-pedagogy strong {
+  color: #451a03;
+}
+
+body.theme-light .callout-tech {
+  background: #eef2ff;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #312e81;
+}
+body.theme-light .callout-tech .callout-content h4 {
+  color: #4338ca;
+}
+body.theme-light .callout-tech p {
+  color: #312e81;
+}
+body.theme-light .callout-tech strong {
+  color: #1e1b4b;
+}
+
+body.theme-light .callout-law {
+  background: #ecfdf5;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #064e3b;
+}
+body.theme-light .callout-law .callout-content h4 {
+  color: #047857;
+}
+body.theme-light .callout-law p {
+  color: #064e3b;
+}
+body.theme-light .callout-law strong {
+  color: #022c22;
+}
+
+/* 9. Piramide AI Act (Giorno 3) */
+body.theme-light .tier-unacceptable {
+  background: #fff1f2;
+  border-color: rgba(244, 63, 94, 0.4);
+}
+body.theme-light .tier-unacceptable strong {
+  color: #be123c !important;
+}
+body.theme-light .tier-unacceptable p {
+  color: #334155 !important;
+}
+body.theme-light .tier-unacceptable .btn {
+  background: #f43f5e;
+  border-color: #f43f5e;
+  color: #ffffff !important;
+}
+
+body.theme-light .tier-high {
+  background: #fffbeb;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+body.theme-light .tier-high strong {
+  color: #b45309 !important;
+}
+body.theme-light .tier-high p {
+  color: #334155 !important;
+}
+body.theme-light .tier-high .btn {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #ffffff !important;
+}
+
+body.theme-light .tier-transparency {
+  background: #eef2ff;
+  border-color: rgba(99, 102, 241, 0.4);
+}
+body.theme-light .tier-transparency strong {
+  color: #4338ca !important;
+}
+body.theme-light .tier-transparency p {
+  color: #334155 !important;
+}
+body.theme-light .tier-transparency .btn {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff !important;
+}
+
+body.theme-light .tier-minimal {
+  background: #ecfdf5;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+body.theme-light .tier-minimal strong {
+  color: #047857 !important;
+}
+body.theme-light .tier-minimal p {
+  color: #334155 !important;
+}
+body.theme-light .tier-minimal .btn {
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff !important;
+}
+
+body.theme-light #riskDetailBox {
+  background: #f8fafc !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+}
+body.theme-light #riskDetailBox h3 {
+  color: #0f172a !important;
+}
+body.theme-light #riskDetailBox p {
+  color: #334155 !important;
+}
+
+/* 10. Singola Pagina Web (SPA) & Box Codice (Giorno 3) */
+body.theme-light .spa-demo-box,
+body.theme-light div[style*="background: #020617"],
+body.theme-light div[style*="background:#020617"] {
+  background: #ffffff !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light div[style*="background: #020617"] h3,
+body.theme-light div[style*="background:#020617"] h3,
+body.theme-light div[style*="background: #020617"] h4,
+body.theme-light div[style*="background:#020617"] h4 {
+  color: #0f172a !important;
+}
+
+body.theme-light div[style*="background: #020617"] p,
+body.theme-light div[style*="background:#020617"] p {
+  color: #334155 !important;
+}
+
+body.theme-light textarea#spaTestInput {
+  background: #f8fafc !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: #0f172a !important;
+}
+
+body.theme-light .alert-danger {
+  background: #fee2e2 !important;
+  border: 1px solid #f87171 !important;
+  color: #991b1b !important;
+}
+body.theme-light .alert-danger strong {
+  color: #991b1b !important;
+}
+
+body.theme-light .alert-success {
+  background: #dcfce7 !important;
+  border: 1px solid #4ade80 !important;
+  color: #166534 !important;
+}
+body.theme-light .alert-success strong {
+  color: #166534 !important;
+}
+
+
+/* Prompt Box (Codice) - Mantiene look console elegante ma sempre leggibile */
+.prompt-box {
+  background: #090d1a !important;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+.prompt-box .prompt-text {
+  color: #e2e8f0 !important;
+}
+.prompt-box .prompt-box-title {
+  color: var(--accent-secondary) !important;
+}
+.prompt-box .btn-copy {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #f1f5f9 !important;
+}
+.prompt-box .btn-copy:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+}
+
+/* 11. Visualizzatore Multimodale (Giorno 2) */
+body.theme-light .multimodal-viewer {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .stage-card {
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .stage-card:hover {
+  border-color: var(--accent-primary);
+}
+
+body.theme-light .stage-card h4 {
+  color: #0f172a;
+}
+
+body.theme-light .stage-card p {
+  color: #475569;
+}
+
+body.theme-light #day2StageDescription {
+  background: #f8fafc !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+body.theme-light #day2StageDescription strong {
+  color: #0284c7 !important;
+}
+
+body.theme-light #day2StageDescription p {
+  color: #334155 !important;
+}
+
+/* 12. Chat Simulator (Giorno 4) */
+body.theme-light .chat-simulator {
+  background: #ffffff;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+body.theme-light .chat-header {
+  background: #f8fafc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .chat-header strong {
+  color: #0f172a;
+}
+
+body.theme-light .bubble-bot {
+  background: #f1f5f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #0f172a;
+}
+
+body.theme-light .bubble-bot strong {
+  color: #0f172a;
+}
+
+body.theme-light .chat-input-area {
+  background: #f8fafc;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .chat-input-area input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #0f172a;
+}
+
+/* 13. Music Player (Giorno 5) */
+body.theme-light .music-player-widget {
+  background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+
+body.theme-light .music-player-widget h3 {
+  color: #0f172a !important;
+}
+
+body.theme-light .music-player-widget p {
+  color: #334155 !important;
+}
+
+body.theme-light #musicStatusLabel {
+  color: #4c1d95 !important;
+}
+
+/* Decalogo (Giorno 5) */
+body.theme-light .decalogo-item {
+  background: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+}
+body.theme-light .decalogo-item strong {
+  color: #0f172a !important;
+}
+body.theme-light .decalogo-item p {
+  color: #334155 !important;
+}
+
+
+/* 14. Moduli Form & Input (Giorno 1) */
+body.theme-light label {
+  color: #0f172a !important;
+}
+
+body.theme-light input[type="text"],
+body.theme-light select,
+body.theme-light textarea {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: #0f172a !important;
+}
+
+body.theme-light input[type="text"]:focus,
+body.theme-light select:focus,
+body.theme-light textarea:focus {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* 15. Footer */
+body.theme-light .site-footer {
+  background: #f1f5f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.theme-light .footer-brand p {
+  color: #475569;
+}
+
+body.theme-light .footer-col h4 {
+  color: #0f172a;
+}
+
+body.theme-light .footer-links a {
+  color: #475569;
+}
+
+body.theme-light .footer-links a:hover {
+  color: var(--accent-primary);
+}
+
+body.theme-light .footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  color: #64748b;
+}
+
+body.theme-light .footer-bottom a {
+  color: #475569;
+}
+
+body.theme-light .footer-bottom a:hover {
+  color: var(--accent-primary);
+}
+
+/* 16. Regole Generali di Salvaguardia e Contrasto */
+body.theme-light .section-header p,
+body.theme-light header p {
+  color: #334155 !important;
+}
+
+body.theme-light [style*="color: #cbd5e1"],
+body.theme-light [style*="color:#cbd5e1"] {
+  color: #334155 !important;
+}
+
+body.theme-light [style*="color: #e2e8f0"],
+body.theme-light [style*="color:#e2e8f0"] {
+  color: #0f172a !important;
+}
+
+body.theme-light .card h2[style*="color: #fff"],
+body.theme-light .card h2[style*="color:#fff"],
+body.theme-light .card h3[style*="color: #fff"],
+body.theme-light .card h3[style*="color:#fff"],
+body.theme-light .card h4[style*="color: #fff"],
+body.theme-light .card h4[style*="color:#fff"],
+body.theme-light .card h5[style*="color: #fff"],
+body.theme-light .card h5[style*="color:#fff"] {
+  color: #0f172a !important;
+}
+
+body.theme-light .card label[style*="color: #e2e8f0"],
+body.theme-light .card label[style*="color:#e2e8f0"],
+body.theme-light .card label[style*="color: #fff"],
+body.theme-light .card label[style*="color:#fff"] {
+  color: #0f172a !important;
+}
+
+body.theme-light .day-pager-nav {
+  border-top-color: rgba(0, 0, 0, 0.08);
 }

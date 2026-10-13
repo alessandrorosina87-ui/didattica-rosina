@@ -259,9 +259,9 @@ function initDay3RiskInspector() {
       if (data) {
         detailBox.innerHTML = `
           <div style="border-left: 4px solid var(--accent-secondary); padding-left: 1rem;">
-            <span class="stage-badge" style="background: rgba(99, 102, 241, 0.2); color: #818cf8; font-weight:700;">${data.badge}</span>
-            <h3 style="margin: 0.6rem 0;">${data.title}</h3>
-            <p style="font-size: 1.02rem; color: #cbd5e1; line-height: 1.6;">${data.desc}</p>
+            <span class="stage-badge" style="background: rgba(99, 102, 241, 0.2); color: var(--accent-primary); font-weight:700;">${data.badge}</span>
+            <h3 style="margin: 0.6rem 0; color: var(--text-main);">${data.title}</h3>
+            <p style="font-size: 1.02rem; color: var(--text-subtle); line-height: 1.6;">${data.desc}</p>
           </div>
         `;
       }

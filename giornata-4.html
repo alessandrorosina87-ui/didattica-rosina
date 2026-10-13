@@ -54,7 +54,7 @@
       <header class="section-header" style="text-align: left; max-width: 900px; margin-bottom: 2.5rem;">
         <div class="highlight-badge"><span>4️⃣</span> Quarto Incontro Formativo</div>
         <h1>Video Generativo con <span class="text-gradient">Google Flow</span>, Studio con NotebookLM & Creazione di Custom Gems</h1>
-        <p style="font-size: 1.18rem; color: #cbd5e1;">
+        <p style="font-size: 1.18rem; color: var(--text-subtle);">
           Dalla potenza dinamica del video sintetico e del visual storytelling alla rivoluzione epistemologica di Google NotebookLM: l'IA finalmente ancorata a fonti certificate con zero allucinazioni e l'ingegnerizzazione di Gems socratiche per la classe.
         </p>
       </header>
@@ -70,23 +70,23 @@
         </p>
 
         <div class="cards-grid-3" style="margin-top: 1.8rem;">
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card" style="padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
             <div style="font-size: 1.6rem; color: #38bdf8; margin-bottom: 0.5rem;">⏱️ Coerenza Spazio-Temporale</div>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               I modelli video non creano semplici frame indipendenti, ma predicono la fisica del movimento, la persistenza degli oggetti e la continuità luminosa attraverso i fotogrammi.
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card" style="padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
             <div style="font-size: 1.6rem; color: #f59e0b; margin-bottom: 0.5rem;">🔬 Ricostruzioni di Fenomeni</div>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               Dall'animazione di reazioni chimiche cellulari all'evoluzione geomorfologica di un vulcano: il docente può generare brevi clip di 5-10 secondi a supporto immediato della spiegazione.
             </p>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.5); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div class="nested-card" style="padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
             <div style="font-size: 1.6rem; color: #f43f5e; margin-bottom: 0.5rem;">🛡️ Senso Critico sui Deepfake</div>
-            <p style="font-size: 0.92rem; color: #cbd5e1;">
+            <p style="font-size: 0.92rem; color: var(--text-subtle);">
               Laboratorio essenziale con gli studenti: riconoscere gli artefatti video (mani, riflessi irregolari, flickering) e comprendere l'importanza delle filigrane digitali (SynthID).
             </p>
           </div>
@@ -94,7 +94,7 @@
       </section>
 
       <!-- SEZIONE 2: GOOGLE NOTEBOOKLM - L'IA ANCORATA ALLE FONTI -->
-      <section class="card" id="notebooklmSection" style="margin-bottom: 3rem; background: linear-gradient(145deg, rgba(16, 22, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%); border-color: rgba(99, 102, 241, 0.35);">
+      <section class="card card-featured" id="notebooklmSection" style="margin-bottom: 3rem;">
         <div class="highlight-badge" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">
           <span>📚</span> Grounding & Zero Allucinazioni
         </div>
@@ -104,9 +104,9 @@
         </p>
 
         <div class="cards-grid-2" style="margin: 2rem 0; gap: 2rem;">
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.8rem; border-radius: var(--radius-md); border-left: 4px solid #10b981;">
+          <div class="nested-card" style="padding: 1.8rem; border-radius: var(--radius-md); border-left: 4px solid #10b981;">
             <h4 style="color: #6ee7b7; margin-bottom: 0.8rem;">Come Funziona NotebookLM a Scuola</h4>
-            <ul style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
+            <ul style="color: var(--text-subtle); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
               <li>Il docente o lo studente carica i propri documenti (PDF di libri di testo, appunti, articoli scientifici, slide della lezione).</li>
               <li>L'IA crea un database vettoriale privato ed <strong>elabora risposte basandosi esclusivamente su quel materiale</strong>.</li>
               <li>Ogni frase prodotta contiene note numeriche cliccabili che mostrano esattamente la pagina e il paragrafo di origine!</li>
@@ -114,12 +114,12 @@
             </ul>
           </div>
 
-          <div style="background: rgba(2, 6, 23, 0.6); padding: 1.8rem; border-radius: var(--radius-md); border-left: 4px solid #f59e0b;">
+          <div class="nested-card" style="padding: 1.8rem; border-radius: var(--radius-md); border-left: 4px solid #f59e0b;">
             <h4 style="color: #fcd34d; margin-bottom: 0.8rem;">La Funzionalità "Audio Overview" (Podcast Didattico)</h4>
-            <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            <p style="color: var(--text-subtle); font-size: 0.92rem; line-height: 1.6;">
               Con un solo clic sui documenti caricati, NotebookLM genera una conversazione podcast sintetica tra due speaker radiofonici che discutono e analizzano i contenuti chiave del testo con tono colloquiale ma rigoroso.
             </p>
-            <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin-bottom: 0;">
+            <p style="color: var(--text-subtle); font-size: 0.92rem; line-height: 1.6; margin-bottom: 0;">
               Uno strumento straordinario per la didattica inclusiva e per studenti con preferenza di apprendimento uditivo o DSA.
             </p>
           </div>
@@ -138,8 +138,8 @@
 
         <!-- SIMULATORE INTERATTIVO CHAT CON LA GEM SOCRATICA -->
         <div style="margin-top: 2rem;">
-          <h4 style="color: #fff; margin-bottom: 0.8rem;">Simulatore Live: Dialoga con la "Gem Socratica" Creata nel Corso</h4>
-          <p style="font-size: 0.95rem; color: #cbd5e1;">
+          <h4 style="margin-bottom: 0.8rem;">Simulatore Live: Dialoga con la "Gem Socratica" Creata nel Corso</h4>
+          <p style="font-size: 0.95rem; color: var(--text-subtle);">
             Prova a fare una richiesta tipica da studente passivo (es. <em>"Fammi il riassunto"</em>, <em>"Risolvi l'equazione"</em> o <em>"Scrivimi il tema"</em>) e osserva come la Gem socratica sposta l'asse cognitivo sullo studente anziché sostituirsi a lui:
           </p>
 
@@ -148,11 +148,11 @@
               <div style="display: flex; align-items: center; gap: 0.7rem;">
                 <span style="font-size: 1.3rem;">💎</span>
                 <div>
-                  <strong style="color: #fff; font-size: 0.95rem;">Gem Didattica Socratica</strong>
+                  <strong style="font-size: 0.95rem;">Gem Didattica Socratica</strong>
                   <span style="display: block; font-size: 0.72rem; color: #34d399;">Attiva • Istruzioni Pedagogiche Applicate</span>
                 </div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #94a3b8;">Scuola 4.0</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Scuola 4.0</span>
             </div>
 
             <div class="chat-messages" id="gemChatMessages">
@@ -171,10 +171,11 @@
 
         <!-- ISTRUZIONI DI SISTEMA PER CREARE LA PROPRIA GEM -->
         <div style="margin-top: 2.5rem;">
-          <h4 style="color: #fff; margin-bottom: 0.8rem;">Le Istruzioni di Sistema (System Prompt) per Costruire la Tua Gem</h4>
-          <p style="font-size: 0.95rem; color: #cbd5e1;">
+          <h4 style="margin-bottom: 0.8rem;">Le Istruzioni di Sistema (System Prompt) per Costruire la Tua Gem</h4>
+          <p style="font-size: 0.95rem; color: var(--text-subtle);">
             Copia questa formula e incollala nella sezione "Crea una Gem" di Google Gemini per renderla disponibile ai tuoi studenti:
           </p>
+
 
           <div class="prompt-box">
             <div class="prompt-box-header">
