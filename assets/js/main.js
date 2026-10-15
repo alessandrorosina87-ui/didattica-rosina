@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDay3RiskInspector();
   initDay4SocraticChat();
   initDay5FlowMusicSynth();
+  initGuidePage();
 });
 
 /* ==========================================================================
@@ -392,3 +393,112 @@ function initDay5FlowMusicSynth() {
     }
   });
 }
+
+/* ==========================================================================
+   POLO GUIDE: SIMULATORE URL E CHECKLIST DIDATTICA
+   ========================================================================== */
+function initGuidePage() {
+  const siteInput = document.getElementById('urlBuilderSiteName');
+  const extSelect = document.getElementById('urlBuilderExt');
+  const fileInput = document.getElementById('urlBuilderFile');
+  const outputSpan = document.getElementById('urlPreviewOutput');
+  const helperNote = document.getElementById('urlHelperNote');
+  const copyBtn = document.getElementById('btnCopyGeneratedUrl');
+
+  function updatePreview() {
+    if (!siteInput || !extSelect || !fileInput || !outputSpan) return;
+    let site = siteInput.value.trim().toLowerCase().replace(/[^a-z0-9-_]/g, '');
+    if (!site) site = 'tuo-sito';
+    const ext = extSelect.value;
+    let file = fileInput.value.trim().replace(/^\/+/, '');
+
+    let fullUrl = `https://${site}${ext}`;
+    if (file) {
+      fullUrl += `/${file}`;
+    }
+
+    outputSpan.textContent = fullUrl;
+
+    if (helperNote) {
+      if (!file || file === 'index.html') {
+        helperNote.innerHTML = `Poiché il file indicato è <code>${file || 'index.html'}</code> (la pagina predefinita), puoi accedere digitando semplicemente <strong>https://${site}${ext}</strong>!`;
+      } else {
+        helperNote.innerHTML = `Per aprire direttamente questa risorsa, digita esattamente <strong>https://${site}${ext}/${file}</strong> nel browser.`;
+      }
+    }
+  }
+
+  if (siteInput && extSelect && fileInput) {
+    siteInput.addEventListener('input', updatePreview);
+    extSelect.addEventListener('change', updatePreview);
+    fileInput.addEventListener('input', updatePreview);
+    updatePreview();
+  }
+
+  if (copyBtn && outputSpan) {
+    copyBtn.addEventListener('click', () => {
+      const text = outputSpan.textContent.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Indirizzo web copiato negli appunti!');
+        const origHtml = copyBtn.innerHTML;
+        copyBtn.innerHTML = '<span>✓</span> Copiato!';
+        setTimeout(() => {
+          copyBtn.innerHTML = origHtml;
+        }, 2000);
+      });
+    });
+  }
+
+  // Interactive Checklist
+  const checkboxes = document.querySelectorAll('.interactive-checklist-group .chk-step');
+  const progressBar = document.getElementById('checklistProgressBar');
+  const progressText = document.getElementById('checklistProgressText');
+
+  if (checkboxes.length > 0) {
+    const STORAGE_KEY = 'ai-course-guide-checklist';
+    let savedState = {};
+    try {
+      savedState = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    } catch (e) {
+      savedState = {};
+    }
+
+    function updateChecklistProgress() {
+      let checkedCount = 0;
+      checkboxes.forEach(chk => {
+        const id = chk.getAttribute('data-step-id');
+        if (chk.checked) checkedCount++;
+        savedState[id] = chk.checked;
+      });
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedState));
+      } catch (e) {}
+
+      const percent = Math.round((checkedCount / checkboxes.length) * 100);
+      if (progressBar) progressBar.style.width = `${percent}%`;
+      if (progressText) {
+        progressText.textContent = `${checkedCount} di ${checkboxes.length} passaggi completati (${percent}%)`;
+        if (percent === 100) {
+          progressText.innerHTML = `🎉 Complimenti! Tutti i 7 passaggi sono completati: il tuo sito è online!`;
+        }
+      }
+    }
+
+    checkboxes.forEach(chk => {
+      const id = chk.getAttribute('data-step-id');
+      if (savedState[id]) {
+        chk.checked = true;
+      }
+      chk.addEventListener('change', () => {
+        updateChecklistProgress();
+        if (chk.checked) {
+          showToast('Passo completato!');
+        }
+      });
+    });
+
+    updateChecklistProgress();
+  }
+}
+

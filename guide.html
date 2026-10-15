@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polo Guide & Tutorial: Pubblicazione Web su Free.nf | Snodi Formativi AI</title>
+  <meta name="description"
+    content="Polo per le guide operative del corso Snodi Formativi AI. Guida passo-passo per creare un account su Free.nf a 0€, configurare il dominio, usare il File Manager e pubblicare il sito web.">
+  <meta name="keywords"
+    content="Free.nf, Hosting Gratuito, InfinityFree, Pubblicazione Web, File Manager, Snodi Formativi, Corso AI, Didattica Digitale, Guide Tecniche">
+  <meta name="author" content="Docente di Informatica e Formatore IA">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+
+<body>
+  <div class="bg-ambient-glow"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Intestazione del Sito -->
+  <header class="site-header" id="topHeader">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Torna alla Home">
+        <div class="brand-icon">✦</div>
+        <div class="brand-text">
+          <span class="brand-title">Snodi Formativi AI</span>
+          <span class="brand-subtitle">Polo Guide • Risorse Tecniche</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html"><span>🏠</span> Home</a></li>
+        <li class="nav-item"><a href="giornata-1.html"><span>1️⃣</span> Giorno 1</a></li>
+        <li class="nav-item"><a href="giornata-2.html"><span>2️⃣</span> Giorno 2</a></li>
+        <li class="nav-item"><a href="giornata-3.html"><span>3️⃣</span> Giorno 3</a></li>
+        <li class="nav-item"><a href="giornata-4.html"><span>4️⃣</span> Giorno 4</a></li>
+        <li class="nav-item"><a href="giornata-5.html"><span>5️⃣</span> Giorno 5</a></li>
+        <li class="nav-item"><a href="guide.html" class="active"><span>📚</span> Polo Guide</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Cambia tema chiaro/scuro"
+          title="Cambia tema">☀️</button>
+        <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Apri menu di navigazione">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Percorso di navigazione">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="guide.html">Risorse Didattiche</a>
+        <span class="sep">/</span>
+        <span style="color: var(--accent-secondary);">Polo Guide Operative</span>
+      </nav>
+
+      <!-- Intestazione del Polo Guide -->
+      <header class="section-header" style="text-align: left; max-width: 960px; margin-bottom: 2.8rem;">
+        <div class="highlight-badge"><span>📚</span> Polo Didattico per le Guide Operative</div>
+        <h1>Centro Guide & Tutorial: <span class="text-gradient">Dal Codice al Web Reale</span></h1>
+        <p style="font-size: 1.18rem; color: var(--text-subtle);">
+          Benvenuti nella pagina polo delle guide pratiche di <strong>Snodi Formativi AI</strong>. In questa sezione
+          troverai procedure guidate, schermate commentate e checklist operative per mettere in produzione i progetti
+          digitali creati con l'Intelligenza Artificiale, rendendoli fruibili a scuola, agli studenti e alla comunità
+          educante.
+        </p>
+
+        <!-- Quick Jump Pills -->
+        <div class="guide-nav-pills" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <a href="#guidaFreenf" class="btn btn-secondary btn-sm" style="border-color: var(--accent-secondary);">
+            <span>🚀</span> Guida Free.nf Hosting (In Evidenza)
+          </a>
+          <a href="#simulatoreUrl" class="btn btn-secondary btn-sm">
+            <span>🧭</span> Simulatore Indirizzo Web
+          </a>
+          <a href="#checklistOperativa" class="btn btn-secondary btn-sm">
+            <span>✅</span> Checklist Passo-Passo
+          </a>
+          <a href="#altreGuide" class="btn btn-secondary btn-sm">
+            <span>📁</span> Tutte le Guide del Corso
+          </a>
+        </div>
+      </header>
+
+      <!-- SEZIONE PRINCIPALE IN EVIDENZA: GUIDA COMPLETA FREE.NF -->
+      <section class="card" id="guidaFreenf" style="margin-bottom: 3.5rem; border-color: rgba(99, 102, 241, 0.35);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+          <div class="highlight-badge" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.35); margin-bottom: 0;">
+            <span>🌐</span> Hosting & Deploy Gratuito • Zero Costi
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-secondary); background: rgba(6, 182, 212, 0.1); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">
+            Servizio: free.nf (InfinityFree) • Piano: 0,00 €
+          </span>
+        </div>
+
+        <h2 style="font-size: 2rem; margin-bottom: 0.8rem;">
+          Come Creare un Account e Pubblicare il Proprio Sito su <span class="text-gradient">free.nf</span>
+        </h2>
+        
+        <p style="font-size: 1.08rem; color: var(--text-subtle); line-height: 1.7; margin-bottom: 1.8rem;">
+          Durante le giornate di laboratorio abbiamo sviluppato pagine web interattive (HTML, CSS e JavaScript), come la
+          Single-Page Application dell'Incontro 3. Per rendere questi progetti visibili a chiunque su Internet senza spendere un
+          centesimo, utilizziamo il servizio di hosting gratuito <a href="https://free.nf/" target="_blank" rel="noopener noreferrer" style="font-weight: 600; text-decoration: underline;">https://free.nf/</a>.
+          Segui con attenzione i passaggi illustrati di seguito.
+        </p>
+
+        <!-- PRIMA IMMAGINE GUIDA: MOCKUP SETUP HOSTING -->
+        <div class="guide-figure" style="margin: 2rem 0 2.5rem 0;">
+          <div class="guide-figure-inner">
+            <img src="assets/img/freenf-hosting-setup.jpg"
+              alt="Schermata di configurazione account su free.nf con selezione piano 0 euro, inserimento sottodominio, verifica disponibilità, password e consenso email"
+              width="1200" height="675" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: var(--radius-md);">
+          </div>
+          <div class="guide-figure-caption">
+            <span class="caption-icon">📸</span>
+            <span><strong>Figura 1:</strong> Panoramica della creazione dell'Hosting Account su <em>free.nf</em> (Piano Gratuito a 0€, scelta dell'estensione di dominio, verifica disponibilità e pulsante verde finale).</span>
+          </div>
+        </div>
+
+        <!-- LISTA CRONOLOGICA DEI PASSI (DETTAGLIO PRECISO RICHIESTO DAL DOCENTE) -->
+        <div class="guide-steps-container">
+
+          <!-- PASSO 1 -->
+          <div class="guide-step-card" id="step1">
+            <div class="guide-step-header">
+              <div class="guide-step-number">1</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Accesso alla Piattaforma</span>
+                <h3 class="guide-step-title">Registrazione oppure Login su free.nf</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Apri il tuo browser preferito e collegati alla pagina web ufficiale del servizio:
+                <a href="https://free.nf/" target="_blank" rel="noopener noreferrer" class="link-bold">
+                  🔗 https://free.nf/
+                </a>
+              </p>
+              <ul>
+                <li>Se è la prima volta che utilizzi la piattaforma, esegui la <strong>registrazione (Sign Up / Register)</strong> inserendo un indirizzo email valido e una password, confermando l'eventuale messaggio di verifica ricevuto nella casella di posta.</li>
+                <li>Se invece possiedi già le credenziali, clicca direttamente su <strong>Login</strong> per accedere alla tua area personale (Client Area Dashboard).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PASSO 2 -->
+          <div class="guide-step-card" id="step2">
+            <div class="guide-step-header">
+              <div class="guide-step-number">2</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Dashboard Personale</span>
+                <h3 class="guide-step-title">Accesso alla Sezione "Hosting Account"</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Una volta entrati nella schermata principale del proprio profilo, individuate nel pannello laterale o nella barra superiore il pulsante / voce di menu denominato:
+              </p>
+              <div style="margin: 0.8rem 0;">
+                <span class="guide-ui-btn">Hosting Account</span>
+                <span style="color: var(--text-muted); font-size: 0.92rem; margin-left: 0.5rem;">(in alcune versioni compare come <strong>Accounts</strong>)</span>
+              </div>
+              <p>
+                Cliccandoci sopra avrete la visualizzazione d'insieme di tutti i vostri spazi web attivi.
+              </p>
+            </div>
+          </div>
+
+          <!-- PASSO 3 -->
+          <div class="guide-step-card" id="step3">
+            <div class="guide-step-header">
+              <div class="guide-step-number">3</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Nuovo Hosting</span>
+                <h3 class="guide-step-title">Cliccare su "Create Account" e Selezionare il Piano Gratuito a 0 €</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Nella schermata degli account hosting:
+              </p>
+              <ol>
+                <li>Fate clic sul pulsante <span class="guide-ui-btn guide-ui-btn-accent">Create Account</span> (Crea Account).</li>
+                <li>Nella tabella comparativa dei piani di hosting disponibili, individuate il <strong>piano gratuito a 0 euro (Free Plan / 0 €)</strong>.</li>
+                <li>Selezionate questo piano per confermare che non vi sarà alcun addebito o costo nascosto.</li>
+              </ol>
+              <div class="callout callout-tech" style="margin-top: 1rem;">
+                <div class="callout-icon">💡</div>
+                <div class="callout-content">
+                  <h4>Perché il Piano 0 € è ideale per la scuola</h4>
+                  <p>Fornisce 5 GB di spazio su disco, banda illimitata, supporto PHP e MySQL e certificato SSL HTTPS gratuito, perfetto per pubblicare tutti i siti e gli esperimenti del corso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 4 -->
+          <div class="guide-step-card" id="step4">
+            <div class="guide-step-header">
+              <div class="guide-step-number">4</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Configurazione Dominio</span>
+                <h3 class="guide-step-title">Inserire il Nome del Sito e Scegliere l'Estensione dal Menù a Tendina</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Nella sezione <em>Domain Name</em> selezionate l'opzione <strong>Subdomain</strong> (sottodominio gratuito incluso):
+              </p>
+              <ul>
+                <li>Nel riquadro di testo inserite il <strong>nome che volete dare al vostro sito</strong> (ad esempio: <code>progetto-scuola</code>, <code>didattica-ai-2026</code>, <code>laboratorio-rossi</code>). Consigliamo di usare solo caratteri minuscoli, numeri e trattini, senza spazi né accenti.</li>
+                <li>Subito accanto, aprite il <strong>menù a tendina</strong> per selezionare l'estensione di dominio desiderata (ad esempio <code>.free.nf</code>, <code>.infinityfreeapp.com</code>, <code>.epizy.com</code>).</li>
+              </ul>
+              <div class="callout callout-pedagogy" style="margin-top: 1rem;">
+                <div class="callout-icon">🧭</div>
+                <div class="callout-content">
+                  <h4>Il Criterio di Scelta Didattico</h4>
+                  <p>L'estensione può essere <strong>qualsiasi</strong> tra quelle proposte. In questo contesto didattico, la scelta si effettua unicamente in base al <strong>livello di facilità nel ricordarla, pronunciarla e dettarla</strong> ai colleghi o agli studenti (es. l'estensione <code>.free.nf</code> è particolarmente breve e immediata).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASSO 5 -->
+          <div class="guide-step-card" id="step5">
+            <div class="guide-step-header">
+              <div class="guide-step-number">5</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Controllo Unicità</span>
+                <h3 class="guide-step-title">Cliccare su "Check Available" per Verificare la Disponibilità</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                I domini web sono identificativi unici al mondo: due siti non possono avere esattamente lo stesso indirizzo.
+              </p>
+              <div style="margin: 0.8rem 0;">
+                <span class="guide-ui-btn guide-ui-btn-blue">Check Available</span>
+                <span style="color: var(--text-muted); font-size: 0.92rem; margin-left: 0.5rem;">(Verifica disponibilità nome)</span>
+              </div>
+              <ul>
+                <li><strong>Se il nome è disponibile:</strong> il portale mostrerà un messaggio di conferma verde e sbloccherà i campi successivi per la password.</li>
+                <li><strong>Se il nome è già occupato:</strong> non preoccupatevi! Basterà provare ad aggiungere un numero, l'anno in corso (es. <code>2026</code>) o selezionare una diversa estensione nel menù a tendina.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PASSO 6 -->
+          <div class="guide-step-card" id="step6">
+            <div class="guide-step-header">
+              <div class="guide-step-number">6</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Credenziali & Consensi</span>
+                <h3 class="guide-step-title">Password di Gestione e Spunta su "I Approve" (Email Consent)</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Per proteggere il vostro spazio di hosting e finalizzare la procedura:
+              </p>
+              <ol>
+                <li><strong>Hosting Account Password:</strong> inserite una password robusta per la gestione del nuovo spazio server (conservatela con cura nei vostri appunti).</li>
+                <li>In corrispondenza della voce <strong>Email Consent</strong>, individuate la casella di controllo e <strong>mettete la spunta su:</strong> <span class="guide-ui-pill">☑ I Approve</span>.</li>
+                <li>Questo passaggio è obbligatorio per consentire al sistema di notificarvi l'attivazione e i parametri tecnici del servizio.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- PASSO 7 -->
+          <div class="guide-step-card" id="step7">
+            <div class="guide-step-header">
+              <div class="guide-step-number">7</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Provisioning Server</span>
+                <h3 class="guide-step-title">Invio del Modulo e Attesa del Caricamento</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Premete il pulsante di invio (es. <em>Create Account</em> o <em>Submit</em>):
+              </p>
+              <ul>
+                <li>Il sistema vi reindirizzerà automaticamente in una nuova pagina di transizione.</li>
+                <li>In questo frangente i server di <em>free.nf</em> stanno creando la partizione su disco, allocando lo spazio web e configurando i record DNS.</li>
+                <li><strong>Non ricaricare né chiudere la pagina:</strong> dovrete semplicemente aspettare pochi istanti fino al termine del caricamento automatico.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PASSO 8 -->
+          <div class="guide-step-card" id="step8">
+            <div class="guide-step-header">
+              <div class="guide-step-number">8</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Conferma & Accesso</span>
+                <h3 class="guide-step-title">Clic sul Pulsante Verde: Accesso alle Impostazioni del Nuovo Dominio</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Una volta completata l'attivazione in background:
+              </p>
+              <div style="margin: 0.8rem 0;">
+                <span class="guide-ui-btn guide-ui-btn-green">Finish / Control Panel</span>
+                <span style="color: var(--text-muted); font-size: 0.92rem; margin-left: 0.5rem;">(Pulsante verde di conferma)</span>
+              </div>
+              <p>
+                Apparirà un evidente <strong>pulsante verde</strong> sullo schermo: cliccateci sopra e sarete immediatamente reindirizzati nella schermata di gestione con tutte le <strong>impostazioni generali del vostro nuovo dominio</strong> (indirizzo IP del server, parametri FTP, stato attivo).
+              </p>
+            </div>
+          </div>
+
+          <!-- PASSO 9 -->
+          <div class="guide-step-card" id="step9">
+            <div class="guide-step-header">
+              <div class="guide-step-number">9</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag">Caricamento File Web</span>
+                <h3 class="guide-step-title">Cliccare su "File Manager" e Inserire i File (Come su una Pen Drive)</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Dalla schermata di configurazione del dominio:
+              </p>
+              <ol>
+                <li>Individuate e cliccate sul pulsante: <span class="guide-ui-btn">File Manager</span> (in alcuni casi <em>Online File Manager</em>).</li>
+                <li>Si aprirà l'interfaccia web per esplorare le cartelle del vostro spazio hosting.</li>
+                <li>Entrate nella cartella principale pubblica del sito, denominata: <code>htdocs</code>.</li>
+                <li>Ora inserite, <strong>esattamente come se steste copiando file all'interno di una normale pen drive USB</strong>, tutti i file che avete creato durante il corso:
+                  <ul>
+                    <li><code>index.html</code> (la pagina principale del vostro sito web)</li>
+                    <li>Gli altri file delle lezioni (es. <code>giornata-1.html</code>, <code>guide.html</code>, ecc.)</li>
+                    <li>L'intera cartella <code>assets/</code> contenente i fogli di stile (<code>css/</code>), gli script (<code>js/</code>) e le immagini (<code>img/</code>).</li>
+                  </ul>
+                </li>
+              </ol>
+              <p style="margin-top: 0.8rem; font-size: 0.95rem; color: var(--text-subtle);">
+                Potete caricare i file sia tramite il pulsante <em>Upload</em> del File Manager, sia trascinandoli (Drag & Drop) direttamente dalla finestra delle cartelle del vostro computer dentro l'interfaccia web del browser.
+              </p>
+            </div>
+          </div>
+
+          <!-- SECONDA IMMAGINE GUIDA: MOCKUP FILE MANAGER -->
+          <div class="guide-figure" style="margin: 2rem 0 2.5rem 0;">
+            <div class="guide-figure-inner">
+              <img src="assets/img/freenf-file-manager.jpg"
+                alt="Interfaccia del File Manager online su free.nf nella cartella htdocs con trascinamento file index.html, cartella assets come se fosse una penna USB e anteprima browser dell'indirizzo nomesito.free.nf"
+                width="1200" height="675" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: var(--radius-md);">
+            </div>
+            <div class="guide-figure-caption">
+              <span class="caption-icon">💾</span>
+              <span><strong>Figura 2:</strong> Il File Manager online nella cartella <code>htdocs</code>. Il caricamento funziona esattamente come il salvataggio su una chiavetta USB: trascinando i file, il sito diventa immediatamente raggiungibile su Internet.</span>
+            </div>
+          </div>
+
+          <!-- PASSO 10 -->
+          <div class="guide-step-card" id="step10" style="border-left: 4px solid var(--accent-emerald);">
+            <div class="guide-step-header">
+              <div class="guide-step-number" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">10</div>
+              <div class="guide-step-title-wrap">
+                <span class="guide-step-tag" style="color: #34d399; border-color: rgba(16, 185, 129, 0.4);">Sito Online!</span>
+                <h3 class="guide-step-title">Accesso ai Contenuti tramite l'Indirizzo Web</h3>
+              </div>
+            </div>
+            <div class="guide-step-body">
+              <p>
+                Una volta caricato tutto all'interno di <code>htdocs</code>, il vostro sito web è <strong>immediatamente online e accessibile da qualsiasi computer, smartphone o tablet nel mondo</strong>!
+              </p>
+              <p>
+                Per visualizzare i contenuti vi basterà aprire una nuova scheda del browser e digitare:
+              </p>
+              <div class="prompt-box" style="margin: 1rem 0;">
+                <div class="prompt-box-header">
+                  <span class="prompt-box-title">Sintassi degli Indirizzi Web di free.nf</span>
+                  <button class="btn-copy" data-target="syntaxUrlCode" aria-label="Copia sintassi URL">Copia Sintassi</button>
+                </div>
+                <pre class="prompt-text" id="syntaxUrlCode" style="margin: 0;"># Per aprire la Home Page (il file index.html viene aperto in automatico):
+https://nomesito.estensione
+
+# Per accedere direttamente a un file specifico o a una pagina:
+https://nomesito.estensione/nome_file
+
+# Esempi pratici:
+https://scuola-ai.free.nf/
+https://scuola-ai.free.nf/giornata-1.html
+https://scuola-ai.free.nf/assets/img/hero.jpg</pre>
+              </div>
+              <div class="callout callout-law" style="margin-top: 1.2rem;">
+                <div class="callout-icon">📌</div>
+                <div class="callout-content">
+                  <h4>Regola Fondamentale del Web</h4>
+                  <p>I server web cercano sempre come file iniziale predefinito quello che si chiama esattamente <code>index.html</code> (tutto minuscolo). Se chiamate la vostra pagina iniziale con un altro nome, dovrete necessariamente specificarlo per intero nell'URL dopo la barra finale (<code>/</code>).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SEZIONE WIDGET INTERATTIVO: SIMULATORE DI INDIRIZZO WEB -->
+      <section class="card" id="simulatoreUrl" style="margin-bottom: 3.5rem;">
+        <div class="highlight-badge" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8;">
+          <span>⚡</span> Strumento Interattivo Didattico
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">
+          Simulatore e Generatore di <span class="text-gradient">Indirizzo Web (URL Builder)</span>
+        </h2>
+        <p style="color: var(--text-subtle); margin-bottom: 1.8rem;">
+          Fai una prova pratica prima di registrare il tuo hosting: inserisci il nome che intendi dare al tuo sito,
+          seleziona l'estensione preferita e scopri esattamente quale sarà l'indirizzo da dettare ai tuoi studenti o colleghi!
+        </p>
+
+        <div class="guide-url-builder-box">
+          <div class="url-builder-form-grid">
+            <div>
+              <label for="urlBuilderSiteName" style="display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.92rem;">
+                1. Nome del Sito Web (Sottodominio):
+              </label>
+              <input type="text" id="urlBuilderSiteName" value="mio-progetto-scuola"
+                placeholder="es: didattica-ai, prof-rossi, classe3a..."
+                style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: rgba(2, 6, 23, 0.6); color: var(--text-main); font-family: var(--font-mono); font-size: 0.95rem;">
+              <small style="color: var(--text-dim); display: block; margin-top: 0.35rem;">Usa lettere minuscole e trattini (evita spazi e simboli speciali)</small>
+            </div>
+
+            <div>
+              <label for="urlBuilderExt" style="display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.92rem;">
+                2. Estensione di Dominio (Menù a Tendina):
+              </label>
+              <select id="urlBuilderExt"
+                style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: rgba(2, 6, 23, 0.6); color: var(--text-main); font-family: var(--font-mono); font-size: 0.95rem;">
+                <option value=".free.nf" selected>.free.nf (Breve e facile da ricordare - Consigliata)</option>
+                <option value=".infinityfreeapp.com">.infinityfreeapp.com</option>
+                <option value=".epizy.com">.epizy.com</option>
+                <option value=".great-site.net">.great-site.net</option>
+                <option value=".rf.gd">.rf.gd</option>
+              </select>
+              <small style="color: var(--text-dim); display: block; margin-top: 0.35rem;">Scegli in base a quale risulta più semplice da memorizzare</small>
+            </div>
+
+            <div style="grid-column: 1 / -1;">
+              <label for="urlBuilderFile" style="display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.92rem;">
+                3. File o Pagina da Visualizzare (opzionale):
+              </label>
+              <input type="text" id="urlBuilderFile" value="index.html"
+                placeholder="es: index.html oppure giornata-1.html"
+                style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: rgba(2, 6, 23, 0.6); color: var(--text-main); font-family: var(--font-mono); font-size: 0.95rem;">
+            </div>
+          </div>
+
+          <!-- Anteprima del Link Risultante -->
+          <div class="url-preview-card" style="margin-top: 1.5rem; background: rgba(2, 6, 23, 0.85); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 1.4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-secondary);">
+                Indirizzo Web Risultante nel Browser
+              </span>
+              <span class="badge-online-live" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-size: 0.78rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: var(--radius-full);">
+                ● PROTOCOLLO HTTPS ATTIVO
+              </span>
+            </div>
+
+            <div class="url-result-box" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; background: rgba(0, 0, 0, 0.4); padding: 0.9rem 1.2rem; border-radius: var(--radius-sm); border: 1px solid rgba(255, 255, 255, 0.08);">
+              <span id="urlPreviewOutput" style="font-family: var(--font-mono); font-size: 1.15rem; color: #38bdf8; font-weight: 600; word-break: break-all;">
+                https://mio-progetto-scuola.free.nf/index.html
+              </span>
+              <button class="btn btn-secondary btn-sm" id="btnCopyGeneratedUrl" aria-label="Copia indirizzo generato">
+                <span>📋</span> Copia Indirizzo
+              </button>
+            </div>
+
+            <div style="margin-top: 0.8rem; font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+              <span>💡</span>
+              <span id="urlHelperNote">Poiché il file indicato è <code>index.html</code>, puoi anche accedere semplicemente digitando <code>https://mio-progetto-scuola.free.nf</code>!</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEZIONE CHECKLIST INTERATTIVA DI PUBBLICAZIONE -->
+      <section class="card" id="checklistOperativa" style="margin-bottom: 3.5rem;">
+        <div class="highlight-badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">
+          <span>✅</span> Monitoraggio dell'Apprendimento
+        </div>
+        <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">
+          Checklist Interattiva del <span class="text-gradient">Web Master Scolastico</span>
+        </h2>
+        <p style="color: var(--text-subtle); margin-bottom: 1.5rem;">
+          Spunta le caselle man mano che esegui i singoli passaggi per tenere traccia del tuo stato di avanzamento:
+        </p>
+
+        <!-- Progress Bar Checklist -->
+        <div style="background: rgba(255, 255, 255, 0.06); border-radius: var(--radius-full); height: 10px; overflow: hidden; margin-bottom: 1.5rem;">
+          <div id="checklistProgressBar" style="width: 0%; height: 100%; background: var(--gradient-brand); transition: width 0.4s ease;"></div>
+        </div>
+        <div id="checklistProgressText" style="font-size: 0.88rem; color: var(--accent-secondary); font-weight: 600; margin-bottom: 1.5rem;">
+          0 di 7 passaggi completati (0%)
+        </div>
+
+        <div class="interactive-checklist-group">
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk1">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 1:</strong> Registrazione o Login completati con successo su <a href="https://free.nf/" target="_blank" rel="noopener">https://free.nf/</a>.</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk2">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 2 & 3:</strong> Cliccato su <em>Hosting Account</em> ➔ <em>Create Account</em> e selezionato il piano a <strong>0 €</strong>.</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk3">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 4:</strong> Inserito il nome del sito e scelta l'estensione nel menù a tendina (es. <code>.free.nf</code>).</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk4">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 5:</strong> Cliccato su <strong>Check Available</strong> con esito positivo di disponibilità.</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk5">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 6:</strong> Impostata una password sicura e spuntato <strong>I Approve</strong> in corrispondenza di <strong>Email Consent</strong>.</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk6">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 7 & 8:</strong> Atteso il caricamento e cliccato sul <strong>pulsante verde</strong> per aprire le impostazioni del dominio.</span>
+          </label>
+
+          <label class="checklist-item-label">
+            <input type="checkbox" class="chk-step" data-step-id="chk7">
+            <span class="custom-chk-box"></span>
+            <span class="chk-text"><strong>Passo 9 & 10:</strong> Aperto il <em>File Manager</em>, caricati i file (come su una pen drive) dentro <code>htdocs</code> e verificato il sito online digitando l'indirizzo!</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- SEZIONE POLO GUIDE: ALTRE RISORSE E TUTORIAL DEL CORSO -->
+      <section id="altreGuide" style="margin-bottom: 2rem;">
+        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+          <div class="highlight-badge"><span>📂</span> Catalogo Risorse Didattiche</div>
+          <h2>Altre Guide Operative del <span class="text-gradient">Corso Snodi Formativi</span></h2>
+          <p style="color: var(--text-subtle);">
+            Oltre alla pubblicazione su free.nf, ecco i riferimenti rapidi alle altre procedure chiave affrontate
+            durante i cinque incontri del nostro percorso:
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Guida Giorno 1 -->
+          <article class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.8rem; color: var(--accent-secondary); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">
+                Incontro 1 • Prompting
+              </div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Guida a Google Gemini Canvas</h3>
+              <p style="font-size: 0.92rem; color: var(--text-subtle);">
+                Come creare un'area di lavoro condivisa con l'IA, modificare blocchi di testo mirati ed esportare il codice HTML/CSS generato per il proprio sito.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <a href="giornata-1.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                Apri Scheda Incontro 1 →
+              </a>
+            </div>
+          </article>
+
+          <!-- Guida Giorno 2 -->
+          <article class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.8rem; color: var(--accent-tertiary); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">
+                Incontro 2 • API & Vision
+              </div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Google AI Studio & Trasformazioni</h3>
+              <p style="font-size: 0.92rem; color: var(--text-subtle);">
+                Procedura per ottenere gratuitamente una chiave API per docenti, impostare il System Prompt e convertire disegni e immagini per compiti scolastici.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <a href="giornata-2.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                Apri Scheda Incontro 2 →
+              </a>
+            </div>
+          </article>
+
+          <!-- Guida Giorno 3 -->
+          <article class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.8rem; color: #34d399; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">
+                Incontro 3 • SPA & Privacy
+              </div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Creazione Single-Page Apps (SPA)</h3>
+              <p style="font-size: 0.92rem; color: var(--text-subtle);">
+                Come strutturare un'applicazione web monopagina conforme al GDPR e all'AI Act europeo, pronta per essere caricata su free.nf.
+              </p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <a href="giornata-3.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                Apri Scheda Incontro 3 →
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PAGER NAVIGAZIONE -->
+      <nav class="day-pager-nav" aria-label="Navigazione rapida del portale">
+        <a href="index.html" class="btn btn-secondary">← Torna alla Home Page</a>
+        <a href="giornata-3.html" class="btn btn-primary">Vai all'Incontro 3 (Creazione Web SPA) →</a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo" style="margin-bottom: 1rem;">
+          <div class="brand-icon">✦</div>
+          <div class="brand-text">
+            <span class="brand-title">Snodi Formativi AI</span>
+            <span class="brand-subtitle">Polo Guide Operative</span>
+          </div>
+        </div>
+        <p>
+          Il portale del corso di alfabetizzazione all'Intelligenza Artificiale per la scuola italiana.
+          Guide pratiche, riflessioni epistemologiche e laboratori applicati per una didattica consapevole.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Percorso Formativo</h4>
+        <ul class="footer-links">
+          <li><a href="giornata-1.html">Giorno 1: Teoria & Prompting</a></li>
+          <li><a href="giornata-2.html">Giorno 2: AI Studio & Immagini</a></li>
+          <li><a href="giornata-3.html">Giorno 3: AI Act & Web SPA</a></li>
+          <li><a href="giornata-4.html">Giorno 4: Video, NotebookLM & Gems</a></li>
+          <li><a href="giornata-5.html">Giorno 5: Laboratorio Finale & Music</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Polo Guide & Risorse</h4>
+        <ul class="footer-links">
+          <li><a href="guide.html#guidaFreenf">Guida Hosting Free.nf (0€)</a></li>
+          <li><a href="guide.html#simulatoreUrl">Simulatore Indirizzo URL</a></li>
+          <li><a href="guide.html#checklistOperativa">Checklist Pubblicazione Web</a></li>
+          <li><a href="https://free.nf/" target="_blank" rel="noopener">Portale Ufficiale Free.nf ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 Portale Snodi Formativi AI • Polo Didattico per le Guide Operative</div>
+      <div>Curato con dedizione da un Docente di Informatica & Formatore AI</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
